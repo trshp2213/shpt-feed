@@ -1,0 +1,27 @@
+spring:
+  main:
+    web-application-type: none   # CLI app – no embedded server
+
+eurocart:
+  # Store this as a GitHub Secret EUROCART_FEED_URL
+  feed-url: ${EUROCART_FEED_URL}
+
+deepl:
+  # Store your DeepL API key as a GitHub Secret DEEPL_API_KEY
+  # Free tier account: https://www.deepl.com/pro-api (500 000 chars/month)
+  api-key: ${DEEPL_API_KEY}
+  # Free tier API URL (use https://api.deepl.com for paid plan)
+  api-url: https://api-free.deepl.com/v2/translate
+
+output:
+  feed-path: output/feed.xml
+  cache-path: output/translation-cache.json
+
+shoptet:
+  parent-category: Carinio   # root category in your Shoptet store
+  currency: EUR
+  vat: 20                    # Slovak VAT rate (not used directly in XML, but here for reference)
+
+logging:
+  level:
+    com.example.shoptetfeed: INFO
