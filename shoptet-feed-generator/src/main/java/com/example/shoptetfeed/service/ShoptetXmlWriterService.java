@@ -39,72 +39,70 @@ public class ShoptetXmlWriterService {
             Element shopItem = doc.createElement("SHOPITEM");
             shop.appendChild(shopItem);
 
-            // --- Basic product info ---
+            // ── Podstawowe informacje ──────────────────────────────────────
             addEl(doc, shopItem, "NAME", item.getName());
             addEl(doc, shopItem, "DESCRIPTION", item.getDescription());
             addEl(doc, shopItem, "MANUFACTURER", item.getManufacturer());
             addEl(doc, shopItem, "VISIBILITY", item.getVisibility());
             addEl(doc, shopItem, "ITEM_TYPE", "product");
 
-            // --- Categories ---
-            // Format: "Carinio > Dečky"  →  Shoptet uses " > " as separator
+            // URL produktu od dostawcy (opcjonalne, ale warto zachować)
+            if (notBlank(item.getProductUrl())) {
+                addEl(doc, shopItem, "URL", item.getProductUrl());
+            }
+
+            // ── Kategorie ─────────────────────────────────────────────────
+            // Format Shoptet: "Carinio > Dečky"
             Element categories = doc.createElement("CATEGORIES");
             shopItem.appendChild(categories);
             addEl(doc, categories, "CATEGORY", item.getCategory());
 
-            // --- Images ---
-            if (item.getMainImage() != null && !item.getMainImage().isBlank()) {
+            // ── Obrazy ────────────────────────────────────────────────────
+            if (notBlank(item.getMainImage())) {
                 Element images = doc.createElement("IMAGES");
                 shopItem.appendChild(images);
                 addImageEl(doc, images, item.getMainImage());
                 if (item.getAdditionalImages() != null) {
                     for (String imgUrl : item.getAdditionalImages()) {
-                        if (imgUrl != null && !imgUrl.isBlank()) {
-                            addImageEl(doc, images, imgUrl);
-                        }
+                        if (notBlank(imgUrl)) addImageEl(doc, images, imgUrl);
                     }
                 }
             }
 
-            // --- Code / EAN ---
+            // ── Kod / EAN ─────────────────────────────────────────────────
             addEl(doc, shopItem, "CODE", item.getCode());
             addEl(doc, shopItem, "EXTERNAL_CODE", item.getExternalCode());
-            if (item.getEan() != null && !item.getEan().isBlank()) {
+            if (notBlank(item.getEan())) {
                 addEl(doc, shopItem, "EAN", item.getEan());
             }
 
-            // --- Price ---
+            // ── Cena ──────────────────────────────────────────────────────
             addEl(doc, shopItem, "CURRENCY", item.getCurrency());
-            // Format price to exactly 2 decimal places, dot as separator
             String priceStr = BigDecimal.valueOf(item.getPrice())
                     .setScale(2, RoundingMode.HALF_UP)
                     .toPlainString();
             addEl(doc, shopItem, "PRICE", priceStr);
 
-            // --- Stock ---
-            Element stock = doc.createElement("STOCK");
-            shopItem.appendChild(stock);
-            Element warehouses = doc.createElement("WAREHOUSES");
-            stock.appendChild(warehouses);
-            Element warehouse = doc.createElement("WAREHOUSE");
-            warehouses.appendChild(warehouse);
-            addEl(doc, warehouse, "NAME", "Sklad");
-            addEl(doc, warehouse, "VALUE", String.valueOf(item.getStockCount()));
-
-            addEl(doc, shopItem, "AVAILABILITY", item.getAvailability());
+            // ── Dostępność ────────────────────────────────────────────────
+            // Piszemy TYLKO jeśli mamy faktyczną wartość – nie wpisujemy domyślnego 0
+            if (notBlank(item.getAvailability())) {
+                addEl(doc, shopItem, "AVAILABILITY", item.getAvailability());
+            }
             addEl(doc, shopItem, "VISIBLE", "1");
 
-            // --- Logistics ---
-            Element logistic = doc.createElement("LOGISTIC");
-            shopItem.appendChild(logistic);
-            // Weight in kg, 3 decimal places
-            String weightStr = BigDecimal.valueOf(item.getWeight())
-                    .setScale(3, RoundingMode.HALF_UP)
-                    .toPlainString();
-            addEl(doc, logistic, "WEIGHT", weightStr);
+            // ── Logistyka ─────────────────────────────────────────────────
+            // Wagę wpisujemy tylko jeśli faktycznie jest w feedzie (> 0)
+            if (item.getWeight() > 0) {
+                Element logistic = doc.createElement("LOGISTIC");
+                shopItem.appendChild(logistic);
+                String weightStr = BigDecimal.valueOf(item.getWeight())
+                        .setScale(3, RoundingMode.HALF_UP)
+                        .toPlainString();
+                addEl(doc, logistic, "WEIGHT", weightStr);
+            }
         }
 
-        // --- Write to file ---
+        // ── Zapis do pliku ────────────────────────────────────────────────
         File outputFile = new File(feedPath);
         outputFile.getParentFile().mkdirs();
 
@@ -120,8 +118,9 @@ public class ShoptetXmlWriterService {
     }
 
     private void addEl(Document doc, Element parent, String tag, String text) {
+        if (text == null) return; // nie dodaj tagu jeśli wartość null
         Element el = doc.createElement(tag);
-        el.setTextContent(text != null ? text : "");
+        el.setTextContent(text);
         parent.appendChild(el);
     }
 
@@ -129,5 +128,9 @@ public class ShoptetXmlWriterService {
         Element image = doc.createElement("IMAGE");
         image.setTextContent(url.trim());
         parent.appendChild(image);
+    }
+
+    private boolean notBlank(String s) {
+        return s != null && !s.isBlank();
     }
 }
