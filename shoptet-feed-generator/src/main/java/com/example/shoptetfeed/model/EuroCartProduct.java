@@ -8,17 +8,18 @@ import java.util.List;
 @Data
 @Builder
 public class EuroCartProduct {
-    private String id;           // <o id="...">
-    private String code;         // <Kod_towaru>
-    private String name;         // <name>
-    private String description;  // <desc>
-    private String category;     // <cat>
-    private String brand;        // <brand>
-    private double price;        // <price> in PLN
-    private String currency;     // <currency>
-    private int stock;           // <o stock="...">
-    private double weight;       // <o weight="..."> in kg
-    private String mainImage;    // <imgs><main url="...">
+    private String id;                // attrybut <o id="...">
+    private String url;               // attrybut <o url="...">
+    private String code;              // tag <Kod_towaru>
+    private String name;              // tag <name>
+    private String description;       // tag <desc>
+    private String category;          // tag <cat>
+    private String brand;             // tag <brand>
+    private double price;             // attrybut <o price="...">
+    private String currency;          // attrybut <o currency="...">
+    private String availabilityText;  // tag <availability> np. "Dostępny"
+    private double weight;            // attrybut <o weight="...">
+    private String mainImage;         // <imgs><main url="...">
     private List<String> additionalImages; // <imgs><i url="...">
-    private String ean;          // <attrs><a name="EAN">
+    private String ean;               // <attrs><a name="EAN">
 }
