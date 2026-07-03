@@ -8,18 +8,18 @@ import java.util.List;
 @Data
 @Builder
 public class ShoptetItem {
-    private String code;               // supplier code (Kod_towaru)
+    private String code;               // Kod_towaru
     private String externalCode;       // euro-cart internal id
-    private String name;               // translated to SK
-    private String description;        // translated to SK
+    private String productUrl;         // URL produktu od dostawcy
+    private String name;               // przetłumaczone na SK
+    private String description;        // przetłumaczone na SK
     private String manufacturer;       // brand
-    private String category;           // "Carinio > Dečky" etc.
+    private String category;           // "Carinio > Dečky"
     private String ean;
-    private double price;              // in EUR, rounded
+    private double price;              // w EUR, zaokrąglona
     private String currency;           // EUR
-    private int stockCount;
     private String availability;       // "Skladom" / "Nedostupné"
-    private double weight;             // in kg
+    private double weight;             // w kg (0.0 = nieznana)
     private String mainImage;
     private List<String> additionalImages;
     private String visibility;         // "visible"
