@@ -49,16 +49,13 @@ public class EuroCartFetcherService {
 
         String xml = response.body();
         log.info("Feed downloaded, size: {} bytes", xml.length());
-
         return parseXml(xml);
     }
 
     private List<EuroCartProduct> parseXml(String xml) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        // Disable external entity processing (security)
         factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
         DocumentBuilder builder = factory.newDocumentBuilder();
-
         Document doc = builder.parse(new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8)));
         doc.getDocumentElement().normalize();
 
@@ -71,7 +68,8 @@ public class EuroCartFetcherService {
             Element o = (Element) node;
 
             try {
-                products.add(parseProduct(o));
+                EuroCartProduct product = parseProduct(o);
+                products.add(product);
             } catch (Exception e) {
                 log.warn("Skipping product id={} due to parse error: {}", o.getAttribute("id"), e.getMessage());
             }
@@ -82,22 +80,28 @@ public class EuroCartFetcherService {
     }
 
     private EuroCartProduct parseProduct(Element o) {
-        String id = o.getAttribute("id");
-        String weightStr = o.getAttribute("weight");
-        String stockStr = o.getAttribute("stock");
+        // ── Atrybuty tagu <o> ──────────────────────────────────────────────
+        String id       = attr(o, "id");
+        String url      = attr(o, "url");
+        String priceStr = attr(o, "price");
+        String currency = attr(o, "currency");
+        String weightStr = attr(o, "weight");
 
+        double price  = priceStr.isBlank()  ? 0.0 : Double.parseDouble(priceStr);
         double weight = weightStr.isBlank() ? 0.0 : Double.parseDouble(weightStr);
-        int stock = stockStr.isBlank() ? 0 : Integer.parseInt(stockStr);
 
-        String code = getTextContent(o, "Kod_towaru");
-        if (code == null || code.isBlank()) {
-            code = id; // fallback to euro-cart id
-        }
+        // Kod_towaru – fallback na id jeśli tag nie istnieje
+        String code = tag(o, "Kod_towaru");
+        if (code.isBlank()) code = id;
 
-        String priceStr = getTextContent(o, "price");
-        double price = priceStr != null ? Double.parseDouble(priceStr) : 0.0;
+        // ── Tagi dzieci ────────────────────────────────────────────────────
+        String name         = tag(o, "name");
+        String description  = tag(o, "desc");
+        String category     = tag(o, "cat");
+        String brand        = tag(o, "brand");
+        String availability = tag(o, "availability"); // np. "Dostępny"
 
-        // Parse images
+        // ── Obrazy ────────────────────────────────────────────────────────
         String mainImage = null;
         List<String> additionalImages = new ArrayList<>();
         NodeList imgNodes = o.getElementsByTagName("imgs");
@@ -109,14 +113,12 @@ public class EuroCartFetcherService {
             }
             NodeList iNodes = imgs.getElementsByTagName("i");
             for (int j = 0; j < iNodes.getLength(); j++) {
-                String url = ((Element) iNodes.item(j)).getAttribute("url");
-                if (url != null && !url.isBlank()) {
-                    additionalImages.add(url);
-                }
+                String imgUrl = ((Element) iNodes.item(j)).getAttribute("url");
+                if (!imgUrl.isBlank()) additionalImages.add(imgUrl);
             }
         }
 
-        // Parse EAN from attrs
+        // ── EAN z attrs ───────────────────────────────────────────────────
         String ean = null;
         NodeList attrNodes = o.getElementsByTagName("a");
         for (int j = 0; j < attrNodes.getLength(); j++) {
@@ -129,14 +131,15 @@ public class EuroCartFetcherService {
 
         return EuroCartProduct.builder()
                 .id(id)
+                .url(url)
                 .code(code)
-                .name(nullToEmpty(getTextContent(o, "name")))
-                .description(nullToEmpty(getTextContent(o, "desc")))
-                .category(nullToEmpty(getTextContent(o, "cat")))
-                .brand(nullToEmpty(getTextContent(o, "brand")))
+                .name(name)
+                .description(description)
+                .category(category)
+                .brand(brand)
                 .price(price)
-                .currency(nullToEmpty(getTextContent(o, "currency")))
-                .stock(stock)
+                .currency(currency)
+                .availabilityText(availability)
                 .weight(weight)
                 .mainImage(mainImage)
                 .additionalImages(additionalImages)
@@ -144,13 +147,15 @@ public class EuroCartFetcherService {
                 .build();
     }
 
-    private String getTextContent(Element parent, String tagName) {
-        NodeList nodes = parent.getElementsByTagName(tagName);
-        if (nodes.getLength() == 0) return null;
-        return nodes.item(0).getTextContent().trim();
+    /** Odczyt atrybutu z elementu (pusty string jeśli brak). */
+    private String attr(Element el, String name) {
+        return el.hasAttribute(name) ? el.getAttribute(name).trim() : "";
     }
 
-    private String nullToEmpty(String s) {
-        return s == null ? "" : s;
+    /** Odczyt treści pierwszego pasującego tagu dziecka (pusty string jeśli brak). */
+    private String tag(Element parent, String tagName) {
+        NodeList nodes = parent.getElementsByTagName(tagName);
+        if (nodes.getLength() == 0) return "";
+        return nodes.item(0).getTextContent().trim();
     }
 }
