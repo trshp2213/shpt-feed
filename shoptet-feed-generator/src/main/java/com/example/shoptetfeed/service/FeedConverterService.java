@@ -56,7 +56,7 @@ public class FeedConverterService {
 
         String fullCategory = translatedCategory.isBlank()
                 ? parentCategory
-                : parentCategory + " > " + translatedCategory;
+                : parentCategory + " | " + translatedCategory;
 
         double priceEur = PriceUtils.convertAndRound(p.getPrice(), eurRate);
 
