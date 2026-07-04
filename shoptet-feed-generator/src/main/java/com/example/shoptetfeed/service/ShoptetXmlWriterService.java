@@ -46,11 +46,6 @@ public class ShoptetXmlWriterService {
             addEl(doc, shopItem, "VISIBILITY", item.getVisibility());
             addEl(doc, shopItem, "ITEM_TYPE", "product");
 
-            // URL produktu od dostawcy (opcjonalne, ale warto zachować)
-            if (notBlank(item.getProductUrl())) {
-                addEl(doc, shopItem, "URL", item.getProductUrl());
-            }
-
             // ── Kategorie ─────────────────────────────────────────────────
             // Format Shoptet: "Carinio > Dečky"
             Element categories = doc.createElement("CATEGORIES");
