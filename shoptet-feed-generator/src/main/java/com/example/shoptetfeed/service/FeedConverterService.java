@@ -29,7 +29,7 @@ public class FeedConverterService {
      * Kluc = co pride z DeepL (porovnava sa case-insensitive)
      * Hodnota = spravny slovensky preklad
      */
-    @Value("#{${shoptet.category-overrides:#{null}}}")
+    @Value("#{${shoptet.category-overrides:{}}}")
     private Map<String, String> categoryOverrides;
 
     public List<ShoptetItem> convert(List<EuroCartProduct> products, Map<String, String> cache, double eurRate) {
