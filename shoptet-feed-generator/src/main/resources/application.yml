@@ -18,9 +18,18 @@ output:
   cache-path: output/translation-cache.json
 
 shoptet:
-  parent-category: Carinio   # root category in your Shoptet store
+  parent-category: "Domáce zvieratá"
   currency: EUR
-  vat: 20                    # Slovak VAT rate (not used directly in XML, but here for reference)
+  vat: 20
+  # Nadpisanie prekladov kategorii kde DeepL preklada nekonzistentne.
+  # Kluc = co DeepL vrati (velke/male pismena su ignorovane pri porovnani)
+  # Hodnota = spravny slovensky preklad
+  category-overrides:
+    "WÓZKI DLA ZWIERZĄT": "Vozíky pre zvieratá"
+    "WÓZKI": "Vozíky pre zvieratá"
+    "NOSIDEŁKA I TORBY": "Prepravné tašky pre zvieratá"
+    "TORBY TRANSPORTOWE": "Prepravné tašky pre zvieratá"
+    "TRANSPORTERY": "Prepravníky pre zvieratá"
 
 logging:
   level:
