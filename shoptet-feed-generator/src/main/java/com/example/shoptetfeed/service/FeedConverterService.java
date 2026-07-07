@@ -68,7 +68,7 @@ public class FeedConverterService {
         // Struktura: "Domáce zvieratá | Deky pre zvieratá"
         String fullCategory = finalCategory.isBlank()
                 ? parentCategory
-                : parentCategory + " | " + finalCategory;
+                : parentCategory + " > " + finalCategory;
 
         double priceEur = PriceUtils.convertAndRound(p.getPrice(), eurRate);
 
