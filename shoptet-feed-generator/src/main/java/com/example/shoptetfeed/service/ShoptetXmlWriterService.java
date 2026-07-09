@@ -78,8 +78,21 @@ public class ShoptetXmlWriterService {
                     .toPlainString();
             addEl(doc, shopItem, "PRICE", priceStr);
 
-            // ── Dostępność ────────────────────────────────────────────────
-            // Piszemy TYLKO jeśli mamy faktyczną wartość – nie wpisujemy domyślnego 0
+            // ── Dostępność + stan magazynowy ──────────────────────────────
+            // Skladom    → VALUE=19 (dostępny u dostawcy)
+            // Nedostupné → VALUE=0  (niedostępny)
+            boolean inStock = "Skladom".equals(item.getAvailability());
+            int stockValue = inStock ? 19 : 0;
+
+            Element stock = doc.createElement("STOCK");
+            shopItem.appendChild(stock);
+            Element warehouses = doc.createElement("WAREHOUSES");
+            stock.appendChild(warehouses);
+            Element warehouse = doc.createElement("WAREHOUSE");
+            warehouses.appendChild(warehouse);
+            addEl(doc, warehouse, "NAME", "Sklad");
+            addEl(doc, warehouse, "VALUE", String.valueOf(stockValue));
+
             if (notBlank(item.getAvailability())) {
                 addEl(doc, shopItem, "AVAILABILITY", item.getAvailability());
             }
