@@ -7036,6 +7036,9 @@
     </STOCK>
     <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+    </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
     <NAME>Prepravka pre zvieratá Carinio Finu Storm</NAME>
@@ -7074,6 +7077,9 @@
     </STOCK>
     <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+    </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
     <NAME>Prepravka pre zvieratá Carinio Finu Mousse</NAME>
@@ -7112,6 +7118,9 @@
     </STOCK>
     <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+    </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
     <NAME>Prepravka pre zvieratá Carinio Finu Hunter</NAME>
@@ -7150,5 +7159,8 @@
     </STOCK>
     <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+    </LOGISTIC>
   </SHOPITEM>
 </SHOP>
