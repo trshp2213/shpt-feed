@@ -65,8 +65,27 @@ public class BaselinkerSyncService {
             JsonNode inventory = resolveInventory();
             String inventoryId = inventory.get("inventory_id").asText();
             String defaultLang = inventory.path("default_language").asText(sourceLang);
-            log.info("BaseLinker inventory: id={} name='{}' default_language={}",
-                    inventoryId, inventory.path("name").asText("?"), defaultLang);
+
+            Set<String> availableLanguages = new HashSet<>();
+            inventory.path("languages").forEach(n -> availableLanguages.add(n.asText()));
+            log.info("BaseLinker inventory: id={} name='{}' default_language={} languages={}",
+                    inventoryId, inventory.path("name").asText("?"), defaultLang, availableLanguages);
+
+            // BaseLinker odrzuca text_fields dla języków spoza "Available languages"
+            // skonfigurowanych w Products > Settings > Inventories > Edit. Ostrzegamy
+            // raz na start runa zamiast wywalać się na pierwszym produkcie.
+            if (!availableLanguages.contains(sourceLang)) {
+                log.warn("Source language '{}' is not in BaseLinker inventory languages {} – "
+                        + "explicit '{}' text fields will be skipped (unsuffixed default field is unaffected)",
+                        sourceLang, availableLanguages, sourceLang);
+            }
+            for (String lang : languageProviders.keySet()) {
+                if (!availableLanguages.contains(lang)) {
+                    log.warn("Language '{}' is not in BaseLinker inventory languages {} – its translations "
+                            + "will NOT be sent until you add it under Products > Settings > Inventories > "
+                            + "Edit > Available languages", lang, availableLanguages);
+                }
+            }
 
             // 2. Grupy cenowe → waluta → lista group_id
             Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventoryId);
@@ -88,7 +107,8 @@ public class BaselinkerSyncService {
                 }
                 feedSkus.add(p.getCode());
                 String existingId = existingBySku.get(p.getCode());
-                upsertProduct(inventoryId, existingId, p, store, rates, groupsByCurrency, warehouseKey, defaultLang);
+                upsertProduct(inventoryId, existingId, p, store, rates, groupsByCurrency, warehouseKey,
+                        defaultLang, availableLanguages);
                 if (existingId != null) updated++; else created++;
             }
 
@@ -213,7 +233,7 @@ public class BaselinkerSyncService {
     private void upsertProduct(String inventoryId, String existingProductId, EuroCartProduct p,
                                TranslationStore store, Map<String, Double> rates,
                                Map<String, List<String>> groupsByCurrency, String warehouseKey,
-                               String defaultLang) throws Exception {
+                               String defaultLang, Set<String> availableLanguages) throws Exception {
         Map<String, Object> params = new LinkedHashMap<>();
         params.put("inventory_id", inventoryId);
         if (existingProductId != null) {
@@ -227,7 +247,7 @@ public class BaselinkerSyncService {
             params.put("weight", p.getWeight());
         }
 
-        params.put("text_fields", buildTextFields(p, store, defaultLang));
+        params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
         params.put("prices", buildPrices(p, rates, groupsByCurrency));
         params.put("stock", Map.of(warehouseKey, isAvailable(p.getAvailabilityText()) ? stockWhenAvailable : 0));
         params.put("images", buildImages(p));
@@ -235,15 +255,21 @@ public class BaselinkerSyncService {
         client.call("addInventoryProduct", params);
     }
 
-    private Map<String, String> buildTextFields(EuroCartProduct p, TranslationStore store, String defaultLang) {
+    private Map<String, String> buildTextFields(EuroCartProduct p, TranslationStore store, String defaultLang,
+                                                Set<String> availableLanguages) {
         Map<String, String> fields = new LinkedHashMap<>();
 
-        // Oryginał (polski) zawsze pod jawnym kluczem
-        putIfPresent(fields, "name|" + sourceLang, p.getName());
-        putIfPresent(fields, "description|" + sourceLang, p.getDescription());
+        // Oryginał (polski) pod jawnym kluczem – tylko jeśli inventory ma ten język
+        // dodany w Available languages (inaczej BaseLinker odrzuca cały request:
+        // "Incorrect text field identifier: name|xx").
+        if (availableLanguages.contains(sourceLang)) {
+            putIfPresent(fields, "name|" + sourceLang, p.getName());
+            putIfPresent(fields, "description|" + sourceLang, p.getDescription());
+        }
 
-        // Tłumaczenia – tylko języki, dla których cache ma wpis
+        // Tłumaczenia – tylko języki dostępne w inventory ORAZ mające wpis w cache
         for (String lang : languageProviders.keySet()) {
+            if (!availableLanguages.contains(lang)) continue;
             Map<String, String> cache = store.lang(lang);
             putIfPresent(fields, "name|" + lang, cache.get(p.getName()));
             putIfPresent(fields, "description|" + lang, cache.get(p.getDescription()));
