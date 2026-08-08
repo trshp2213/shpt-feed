@@ -15,10 +15,12 @@ deepl:
 
 azure:
   # GitHub Secrets: AZURE_TRANSLATOR_KEY + AZURE_TRANSLATOR_REGION (np. westeurope)
-  # Tier F0: 2 000 000 znaków/miesiąc za darmo
+  # Tier F0: 2 000 000 znaków/miesiąc za darmo + throttling ~33 300 znaków/min
+  # (osobny limit, pilnowany wewnętrznie przez AzureTranslatorProvider)
   api-key: ${AZURE_TRANSLATOR_KEY:}
   region: ${AZURE_TRANSLATOR_REGION:}
   endpoint: https://api.cognitive.microsofttranslator.com
+  max-retries: 5
 
 baselinker:
   # GitHub Secret: BASELINKER_TOKEN (Moje konto -> API w panelu BaseLinker).
