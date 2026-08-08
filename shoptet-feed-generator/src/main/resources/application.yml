@@ -13,6 +13,41 @@ deepl:
   # Free tier API URL (use https://api.deepl.com for paid plan)
   api-url: https://api-free.deepl.com/v2/translate
 
+azure:
+  # GitHub Secrets: AZURE_TRANSLATOR_KEY + AZURE_TRANSLATOR_REGION (np. westeurope)
+  # Tier F0: 2 000 000 znaków/miesiąc za darmo
+  api-key: ${AZURE_TRANSLATOR_KEY:}
+  region: ${AZURE_TRANSLATOR_REGION:}
+  endpoint: https://api.cognitive.microsofttranslator.com
+
+baselinker:
+  # GitHub Secret: BASELINKER_TOKEN (Moje konto -> API w panelu BaseLinker).
+  # Pusty token = sync BaseLinkera jest pomijany, feed Shoptet dziala normalnie.
+  token: ${BASELINKER_TOKEN:}
+  api-url: https://api.baselinker.com/connector.php
+  # Opcjonalne: wymagane tylko gdy konto ma wiecej niz jeden katalog/magazyn
+  inventory-id: ${BASELINKER_INVENTORY_ID:}
+  warehouse-id: ${BASELINKER_WAREHOUSE_ID:}
+  # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk)
+  stock-when-available: 50
+  # Odstep miedzy wywolaniami API (limit BaseLinkera: 100 req/min)
+  request-interval-ms: 650
+
+translation:
+  source-lang: pl
+  # Jezyk docelowy -> provider. Kolejnosc = priorytet przy ograniczonym budzecie.
+  # sk zostaje na DeepL (cache w 100% istnieje), cs idzie na DeepL (zapas 500k),
+  # reszta na Azure (2M/mies.)
+  languages: "{sk: 'deepl', cs: 'deepl', hu: 'azure', de: 'azure', ro: 'azure', sl: 'azure', fr: 'azure', bg: 'azure'}"
+  # Miesieczne budzety znakow per provider (z marginesem bezpieczenstwa
+  # ponizej twardych limitow darmowych tierow: DeepL 500k, Azure 2M)
+  monthly-limits: "{deepl: 480000, azure: 1900000}"
+
+currency:
+  # Waluty docelowe (poza PLN) - wszystkie z tabeli A NBP.
+  # BGN celowo brak: Bulgaria przeszla na EUR 1.01.2026, eMag BG zasilamy w EUR.
+  targets: EUR,CZK,HUF,RON
+
 output:
   feed-path: output/feed.xml
   cache-path: output/translation-cache.json
