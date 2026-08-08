@@ -40,6 +40,9 @@ jobs:
         env:
           EUROCART_FEED_URL: ${{ secrets.EUROCART_FEED_URL }}
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
+          AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
+          BASELINKER_TOKEN: ${{ secrets.BASELINKER_TOKEN }}
         run: mvn -q spring-boot:run
 
       - name: Commit updated files
