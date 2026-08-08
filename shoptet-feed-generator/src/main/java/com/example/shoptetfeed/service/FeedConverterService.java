@@ -2,7 +2,6 @@ package com.example.shoptetfeed.service;
 
 import com.example.shoptetfeed.model.EuroCartProduct;
 import com.example.shoptetfeed.model.ShoptetItem;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -13,10 +12,7 @@ import java.util.Map;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
 public class FeedConverterService {
-
-    private final DeepLTranslationService translationService;
 
     @Value("${shoptet.parent-category}")
     private String parentCategory;
@@ -58,9 +54,9 @@ public class FeedConverterService {
     }
 
     private ShoptetItem convertOne(EuroCartProduct p, Map<String, String> cache, double eurRate) {
-        String translatedName     = translationService.translate(p.getName(), cache);
-        String translatedDesc     = translationService.translate(p.getDescription(), cache);
-        String translatedCategory = translationService.translate(p.getCategory(), cache);
+        String translatedName     = translate(p.getName(), cache);
+        String translatedDesc     = translate(p.getDescription(), cache);
+        String translatedCategory = translate(p.getCategory(), cache);
 
         // Aplikuj override ak existuje, inak normalizuj na Title Case
         String finalCategory = resolveCategory(p.getCategory(), translatedCategory);
@@ -128,6 +124,12 @@ public class FeedConverterService {
         if (input == null || input.isBlank()) return input;
         String lower = input.toLowerCase();
         return Character.toUpperCase(lower.charAt(0)) + lower.substring(1);
+    }
+
+    /** Zwraca tłumaczenie z cache albo oryginał, gdy tłumaczenia (jeszcze) brak. */
+    private String translate(String text, Map<String, String> cache) {
+        if (text == null || text.isBlank()) return text;
+        return cache.getOrDefault(text, text);
     }
 
     private String mapAvailability(String availabilityText) {

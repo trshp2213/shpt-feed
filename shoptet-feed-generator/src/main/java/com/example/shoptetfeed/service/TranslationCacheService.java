@@ -1,18 +1,22 @@
 package com.example.shoptetfeed.service;
 
+import com.example.shoptetfeed.model.TranslationStore;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Persists PL→SK translations to a JSON file committed alongside feed.xml.
- * This way each text is only sent to DeepL API once, saving the monthly free-tier quota.
+ * Persystuje cache tłumaczeń (v2, wielojęzyczny) + liczniki zużycia znaków
+ * per provider per miesiąc w JSON commitowanym obok feed.xml.
+ *
+ * Automatyczna migracja: stary płaski format { "tekst PL": "tłumaczenie SK" }
+ * jest wykrywany po braku pola "version" i przenoszony pod translations.sk.
  */
 @Slf4j
 @Service
@@ -23,28 +27,40 @@ public class TranslationCacheService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public Map<String, String> load() {
+    public TranslationStore load() {
         File file = new File(cachePath);
         if (!file.exists()) {
             log.info("No translation cache found at {}, starting fresh", cachePath);
-            return new HashMap<>();
+            return new TranslationStore();
         }
         try {
-            Map<String, String> cache = objectMapper.readValue(file, new TypeReference<>() {});
-            log.info("Loaded {} cached translations from {}", cache.size(), cachePath);
-            return cache;
+            JsonNode root = objectMapper.readTree(file);
+            if (root.has("version")) {
+                TranslationStore store = objectMapper.treeToValue(root, TranslationStore.class);
+                int langs = store.getTranslations().size();
+                int entries = store.getTranslations().values().stream().mapToInt(Map::size).sum();
+                log.info("Loaded translation cache v{}: {} languages, {} entries", store.getVersion(), langs, entries);
+                return store;
+            }
+            // Stary format: płaska mapa PL→SK
+            Map<String, String> flat = objectMapper.convertValue(root, new TypeReference<>() {});
+            TranslationStore store = new TranslationStore();
+            store.lang("sk").putAll(flat);
+            log.info("Migrated legacy flat cache ({} SK entries) to v2 format", flat.size());
+            return store;
         } catch (Exception e) {
             log.warn("Failed to read translation cache: {}. Starting fresh.", e.getMessage());
-            return new HashMap<>();
+            return new TranslationStore();
         }
     }
 
-    public void save(Map<String, String> cache) {
+    public void save(TranslationStore store) {
         try {
             File file = new File(cachePath);
             file.getParentFile().mkdirs();
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, cache);
-            log.info("Saved {} translations to cache at {}", cache.size(), cachePath);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, store);
+            int entries = store.getTranslations().values().stream().mapToInt(Map::size).sum();
+            log.info("Saved translation cache: {} languages, {} entries", store.getTranslations().size(), entries);
         } catch (Exception e) {
             log.error("Failed to save translation cache: {}", e.getMessage());
         }
