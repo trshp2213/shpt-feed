@@ -45,6 +45,9 @@ public class BaselinkerSyncService {
     @Value("${baselinker.stock-when-available:50}")
     private int stockWhenAvailable;
 
+    @Value("${baselinker.vat-rate:23}")
+    private double vatRate;
+
     @Value("#{${translation.languages}}")
     private Map<String, String> languageProviders;
 
@@ -284,6 +287,7 @@ public class BaselinkerSyncService {
             params.put("product_id", existingProductId);
         }
         params.put("sku", p.getCode());
+        params.put("tax", vatRate);
         if (p.getEan() != null && !p.getEan().isBlank()) {
             params.put("ean", p.getEan());
         }
@@ -336,6 +340,12 @@ public class BaselinkerSyncService {
 
     private Map<String, Double> buildPrices(EuroCartProduct p, Map<String, Double> rates,
                                             Map<String, List<String>> groupsByCurrency) {
+        // Feed Carinio podaje ceny NETTO, a grupy cenowe BaseLinkera są BRUTTO –
+        // doliczamy VAT do bazy PLN, dopiero potem konwersja walut i zaokrąglenie 0/9.
+        // (Feed Shoptet celowo bez zmian: tam element PRICE jest netto i Shoptet
+        // sam dolicza VAT według własnych ustawień.)
+        double grossPln = p.getPrice() * (1.0 + vatRate / 100.0);
+
         Map<String, Double> prices = new LinkedHashMap<>();
         for (Map.Entry<String, List<String>> entry : groupsByCurrency.entrySet()) {
             String currency = entry.getKey();
@@ -343,7 +353,7 @@ public class BaselinkerSyncService {
             if (!"PLN".equals(currency) && rate <= 0) {
                 continue; // brak kursu – nie wysyłamy ceny w tej walucie
             }
-            double price = PriceUtils.convertAndRoundFor(currency, p.getPrice(), rate);
+            double price = PriceUtils.convertAndRoundFor(currency, grossPln, rate);
             for (String groupId : entry.getValue()) {
                 prices.put(groupId, price);
             }
