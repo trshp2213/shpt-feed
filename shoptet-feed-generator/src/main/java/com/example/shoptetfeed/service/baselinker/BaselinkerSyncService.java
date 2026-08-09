@@ -90,8 +90,10 @@ public class BaselinkerSyncService {
             // 2. Grupy cenowe → waluta → lista group_id
             Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventoryId);
 
-            // 3. Magazyn (klucz stanu, np. "bl_206") – zawężony do TEGO katalogu
-            String warehouseKey = resolveWarehouseKey(inventoryId);
+            // 3. Magazyn – NIE osobnym wywołaniem API, tylko wprost z odpowiedzi
+            //    getInventories (pole default_warehouse), która jest jedynym
+            //    wiarygodnym źródłem "który magazyn należy do TEGO katalogu".
+            String warehouseKey = resolveWarehouseKey(inventory);
 
             // 4. Istniejące produkty: SKU → product_id
             Map<String, String> existingBySku = fetchExistingProducts(inventoryId);
@@ -184,24 +186,29 @@ public class BaselinkerSyncService {
         return byCurrency;
     }
 
-    private String resolveWarehouseKey(String inventoryId) throws Exception {
+    private String resolveWarehouseKey(JsonNode inventory) {
         if (configuredWarehouseId != null && !configuredWarehouseId.isBlank()) {
             return configuredWarehouseId;
         }
-        // WAŻNE: inventory_id jest wymagany – bez niego API zwraca globalną listę
-        // magazynów na koncie, a nie te faktycznie podpięte pod DANY katalog,
-        // co powoduje ERROR_INVALID_DATA przy wysyłce stanów.
-        JsonNode warehouses = client.call("getInventoryWarehouses", Map.of("inventory_id", inventoryId))
-                .get("warehouses");
-        if (warehouses == null || warehouses.isEmpty()) {
-            throw new IllegalStateException("No warehouses linked to BaseLinker inventory_id=" + inventoryId
-                    + " – link one under Products > Settings > Inventories > Edit > Warehouses");
+        // getInventories zwraca warehouses[] i default_warehouse per KATALOG – to
+        // jedyne wiarygodne źródło. Osobne wywołanie getInventoryWarehouses zwracało
+        // inny (najwyraźniej ogólnokontowy) zestaw, stąd wcześniejszy ERROR_INVALID_DATA:
+        // magazyn istniał na koncie, ale nie był przypisany do TEGO katalogu.
+        String defaultWarehouse = inventory.path("default_warehouse").asText("");
+        if (!defaultWarehouse.isBlank()) {
+            log.info("Using BaseLinker default_warehouse: {} for inventory_id={}",
+                    defaultWarehouse, inventory.get("inventory_id").asText());
+            return defaultWarehouse;
         }
-        JsonNode first = warehouses.get(0);
-        String key = first.path("warehouse_type").asText("bl") + "_" + first.get("warehouse_id").asText();
-        log.info("Using BaseLinker warehouse: {} ('{}') for inventory_id={}",
-                key, first.path("name").asText("?"), inventoryId);
-        return key;
+        JsonNode warehouses = inventory.path("warehouses");
+        if (warehouses.isArray() && !warehouses.isEmpty()) {
+            String key = warehouses.get(0).asText();
+            log.info("No default_warehouse set – using first linked warehouse: {} for inventory_id={}",
+                    key, inventory.get("inventory_id").asText());
+            return key;
+        }
+        throw new IllegalStateException("Catalog inventory_id=" + inventory.get("inventory_id").asText()
+                + " has no warehouses linked – add one under Products > Settings > Inventories > Edit > Warehouses");
     }
 
     // ------------------------------------------------------------------
