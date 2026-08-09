@@ -87,8 +87,10 @@ public class BaselinkerSyncService {
                 }
             }
 
-            // 2. Grupy cenowe → waluta → lista group_id
-            Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventoryId);
+            // 2. Grupy cenowe → waluta → lista group_id.
+            //    Ten sam wzorzec co magazyny: getInventoryPriceGroups zwraca grupy
+            //    CAŁEGO konta, a katalog akceptuje tylko te z inventory.price_groups[].
+            Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventory);
 
             // 3. Magazyn – NIE osobnym wywołaniem API, tylko wprost z odpowiedzi
             //    getInventories (pole default_warehouse), która jest jedynym
@@ -155,9 +157,17 @@ public class BaselinkerSyncService {
         return inventories.get(0);
     }
 
-    private Map<String, List<String>> fetchPriceGroups(String inventoryId) throws Exception {
+    private Map<String, List<String>> fetchPriceGroups(JsonNode inventory) throws Exception {
+        String inventoryId = inventory.get("inventory_id").asText();
         JsonNode groups = client.call("getInventoryPriceGroups", Map.of("inventory_id", inventoryId))
                 .get("price_groups");
+
+        // Grupy cenowe faktycznie podpięte do TEGO katalogu (inventory.price_groups[]).
+        // getInventoryPriceGroups zwraca grupy całego konta; wysłanie ceny do grupy
+        // spoza tej listy kończy się ERROR_INVALID_DATA ("Price group ... is not
+        // included in the given inventory").
+        Set<String> linkedToCatalog = new HashSet<>();
+        inventory.path("price_groups").forEach(n -> linkedToCatalog.add(n.asText()));
 
         Set<String> supported = new HashSet<>();
         supported.add("PLN");
@@ -173,14 +183,21 @@ public class BaselinkerSyncService {
                         + "Change its currency in BaseLinker if it should receive prices.", name, groupId, currency);
                 continue;
             }
+            if (!linkedToCatalog.contains(groupId)) {
+                log.warn("Price group '{}' (id={}, {}) exists on the account but is NOT linked to catalog "
+                        + "inventory_id={} – it will be skipped. Link it under Products > Settings > "
+                        + "Inventories > Edit > Price groups to start receiving prices.",
+                        name, groupId, currency, inventoryId);
+                continue;
+            }
             byCurrency.computeIfAbsent(currency, k -> new ArrayList<>()).add(groupId);
             log.info("Price group mapped: '{}' (id={}) → {}", name, groupId, currency);
         }
 
         for (String c : supported) {
             if (!byCurrency.containsKey(c)) {
-                log.warn("No price group with currency {} exists in BaseLinker – {} prices will not be sent "
-                        + "until you create one", c, c);
+                log.warn("No catalog-linked price group with currency {} – {} prices will not be sent "
+                        + "until one is created and linked to the catalog", c, c);
             }
         }
         return byCurrency;
