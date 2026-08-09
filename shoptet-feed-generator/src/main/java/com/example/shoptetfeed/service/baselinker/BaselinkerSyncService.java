@@ -90,8 +90,8 @@ public class BaselinkerSyncService {
             // 2. Grupy cenowe → waluta → lista group_id
             Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventoryId);
 
-            // 3. Magazyn (klucz stanu, np. "bl_206")
-            String warehouseKey = resolveWarehouseKey();
+            // 3. Magazyn (klucz stanu, np. "bl_206") – zawężony do TEGO katalogu
+            String warehouseKey = resolveWarehouseKey(inventoryId);
 
             // 4. Istniejące produkty: SKU → product_id
             Map<String, String> existingBySku = fetchExistingProducts(inventoryId);
@@ -184,17 +184,23 @@ public class BaselinkerSyncService {
         return byCurrency;
     }
 
-    private String resolveWarehouseKey() throws Exception {
+    private String resolveWarehouseKey(String inventoryId) throws Exception {
         if (configuredWarehouseId != null && !configuredWarehouseId.isBlank()) {
             return configuredWarehouseId;
         }
-        JsonNode warehouses = client.call("getInventoryWarehouses", Map.of()).get("warehouses");
+        // WAŻNE: inventory_id jest wymagany – bez niego API zwraca globalną listę
+        // magazynów na koncie, a nie te faktycznie podpięte pod DANY katalog,
+        // co powoduje ERROR_INVALID_DATA przy wysyłce stanów.
+        JsonNode warehouses = client.call("getInventoryWarehouses", Map.of("inventory_id", inventoryId))
+                .get("warehouses");
         if (warehouses == null || warehouses.isEmpty()) {
-            throw new IllegalStateException("No warehouses found in BaseLinker account");
+            throw new IllegalStateException("No warehouses linked to BaseLinker inventory_id=" + inventoryId
+                    + " – link one under Products > Settings > Inventories > Edit > Warehouses");
         }
         JsonNode first = warehouses.get(0);
         String key = first.path("warehouse_type").asText("bl") + "_" + first.get("warehouse_id").asText();
-        log.info("Using BaseLinker warehouse: {} ('{}')", key, first.path("name").asText("?"));
+        log.info("Using BaseLinker warehouse: {} ('{}') for inventory_id={}",
+                key, first.path("name").asText("?"), inventoryId);
         return key;
     }
 
