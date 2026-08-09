@@ -32,6 +32,9 @@ baselinker:
   warehouse-id: ${BASELINKER_WAREHOUSE_ID:}
   # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk)
   stock-when-available: 50
+  # Feed Carinio podaje ceny NETTO; BaseLinker przyjmuje ceny BRUTTO.
+  # VAT doliczany do ceny bazowej PLN przed konwersja walut (23 = 23%).
+  vat-rate: 23
   # Odstep miedzy wywolaniami API (limit BaseLinkera: 100 req/min)
   request-interval-ms: 650
 
