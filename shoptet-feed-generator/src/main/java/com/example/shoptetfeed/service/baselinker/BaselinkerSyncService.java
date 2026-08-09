@@ -186,29 +186,43 @@ public class BaselinkerSyncService {
         return byCurrency;
     }
 
+    /**
+     * Zwraca klucz magazynu, w którym MOŻNA ustawiać stany przez API, albo null.
+     *
+     * Przez API da się ustawiać stany wyłącznie w magazynach własnych BaseLinkera
+     * (prefiks "bl_"). Magazyny "shop_*" / "warehouse_*" są synchronizowane
+     * z zewnętrznych źródeł (sklep/hurtownia) i API je odrzuca – mylącym
+     * komunikatem "Warehouse ... is not included in the given inventory".
+     * Jeśli katalog ma tylko magazyn shop_* (jak tu: default_warehouse
+     * synchronizowany ze Shoptetu), stany płyną już ścieżką Shoptet→BL
+     * i nasz push byłby zbędnym duplikatem – wtedy zwracamy null i sync
+     * po prostu pomija stany (ceny/teksty idą normalnie).
+     */
     private String resolveWarehouseKey(JsonNode inventory) {
         if (configuredWarehouseId != null && !configuredWarehouseId.isBlank()) {
             return configuredWarehouseId;
         }
-        // getInventories zwraca warehouses[] i default_warehouse per KATALOG – to
-        // jedyne wiarygodne źródło. Osobne wywołanie getInventoryWarehouses zwracało
-        // inny (najwyraźniej ogólnokontowy) zestaw, stąd wcześniejszy ERROR_INVALID_DATA:
-        // magazyn istniał na koncie, ale nie był przypisany do TEGO katalogu.
+        List<String> all = new ArrayList<>();
+        inventory.path("warehouses").forEach(n -> all.add(n.asText()));
         String defaultWarehouse = inventory.path("default_warehouse").asText("");
-        if (!defaultWarehouse.isBlank()) {
-            log.info("Using BaseLinker default_warehouse: {} for inventory_id={}",
-                    defaultWarehouse, inventory.get("inventory_id").asText());
+
+        // Preferuj default, jeśli jest edytowalny; potem pierwszy bl_ z listy
+        if (defaultWarehouse.startsWith("bl_")) {
+            log.info("Using BaseLinker default_warehouse: {} (API-editable)", defaultWarehouse);
             return defaultWarehouse;
         }
-        JsonNode warehouses = inventory.path("warehouses");
-        if (warehouses.isArray() && !warehouses.isEmpty()) {
-            String key = warehouses.get(0).asText();
-            log.info("No default_warehouse set – using first linked warehouse: {} for inventory_id={}",
-                    key, inventory.get("inventory_id").asText());
-            return key;
+        for (String w : all) {
+            if (w.startsWith("bl_")) {
+                log.info("Default warehouse '{}' is store-synced (not API-editable) – "
+                        + "using BL warehouse '{}' from catalog list {}", defaultWarehouse, w, all);
+                return w;
+            }
         }
-        throw new IllegalStateException("Catalog inventory_id=" + inventory.get("inventory_id").asText()
-                + " has no warehouses linked – add one under Products > Settings > Inventories > Edit > Warehouses");
+        log.warn("Catalog has no API-editable (bl_) warehouse – warehouses={}, default='{}'. "
+                + "Stock will NOT be sent via API (it is synced from the store instead). "
+                + "To manage stock from this pipeline, link a BaseLinker warehouse to the catalog "
+                + "or set BASELINKER_WAREHOUSE_ID.", all, defaultWarehouse);
+        return null;
     }
 
     // ------------------------------------------------------------------
@@ -262,7 +276,9 @@ public class BaselinkerSyncService {
 
         params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
         params.put("prices", buildPrices(p, rates, groupsByCurrency));
-        params.put("stock", Map.of(warehouseKey, isAvailable(p.getAvailabilityText()) ? stockWhenAvailable : 0));
+        if (warehouseKey != null) {
+            params.put("stock", Map.of(warehouseKey, isAvailable(p.getAvailabilityText()) ? stockWhenAvailable : 0));
+        }
         params.put("images", buildImages(p));
 
         client.call("addInventoryProduct", params);
@@ -337,6 +353,11 @@ public class BaselinkerSyncService {
 
     private int zeroStockForMissing(String inventoryId, Map<String, String> existingBySku,
                                     Set<String> feedSkus, String warehouseKey) throws Exception {
+        if (warehouseKey == null) {
+            log.info("No API-editable warehouse – skipping stock zeroing for products gone from feed "
+                    + "(stock is managed by the store sync)");
+            return 0;
+        }
         Map<String, Object> productsToZero = new LinkedHashMap<>();
         for (Map.Entry<String, String> entry : existingBySku.entrySet()) {
             if (!feedSkus.contains(entry.getKey())) {
