@@ -45,8 +45,11 @@ public class BaselinkerSyncService {
     @Value("${baselinker.stock-when-available:50}")
     private int stockWhenAvailable;
 
-    @Value("${baselinker.vat-rate:23}")
+    @Value("${baselinker.vat-rate:0}")
     private double vatRate;
+
+    @Value("${baselinker.tax-rate:23}")
+    private double taxRate;
 
     @Value("#{${translation.languages}}")
     private Map<String, String> languageProviders;
@@ -287,7 +290,7 @@ public class BaselinkerSyncService {
             params.put("product_id", existingProductId);
         }
         params.put("sku", p.getCode());
-        params.put("tax", vatRate);
+        params.put("tax", taxRate);
         if (p.getEan() != null && !p.getEan().isBlank()) {
             params.put("ean", p.getEan());
         }
