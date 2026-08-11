@@ -22,17 +22,16 @@ import java.util.Map;
  * Zwracana mapa: kod waluty → ile PLN kosztuje 1 jednostka waluty.
  * Konwersja: price_x = price_pln / rate.
  *
- * Uwaga: NBP kwotuje HUF za 100 jednostek – tu jest to już znormalizowane
- * (dzielimy mid przez 100), więc konsument mapy nie musi o tym wiedzieć.
+ * UWAGA: drukowana tabela A pokazuje HUF za 100 jednostek, ale API zwraca
+ * pole `mid` ZAWSZE znormalizowane do 1 jednostki (np. HUF mid ≈ 0.0118).
+ * Nie wolno tu niczego dzielić – wcześniejsze dzielenie przez 100 zawyżało
+ * ceny HUF stukrotnie.
  */
 @Slf4j
 @Service
 public class NbpCurrencyService {
 
     private static final String NBP_URL_TEMPLATE = "https://api.nbp.pl/api/exchangerates/rates/a/%s/?format=json";
-
-    /** Waluty, które NBP kwotuje za 100 jednostek zamiast za 1. */
-    private static final Map<String, Double> QUOTE_DIVISORS = Map.of("HUF", 100.0);
 
     private final HttpClient httpClient = HttpClient.newBuilder()
             .connectTimeout(Duration.ofSeconds(15))
@@ -71,13 +70,9 @@ public class NbpCurrencyService {
         }
 
         JsonNode root = objectMapper.readTree(response.body());
-        double mid = root.get("rates").get(0).get("mid").asDouble();
+        double rate = root.get("rates").get(0).get("mid").asDouble();
 
-        double divisor = QUOTE_DIVISORS.getOrDefault(code.toUpperCase(Locale.ROOT), 1.0);
-        double rate = mid / divisor;
-
-        log.info("NBP rate: 1 {} = {} PLN{}", code.toUpperCase(Locale.ROOT), rate,
-                divisor != 1.0 ? " (quoted per " + (int) divisor + ", normalized)" : "");
+        log.info("NBP rate: 1 {} = {} PLN", code.toUpperCase(Locale.ROOT), rate);
         return rate;
     }
 }
