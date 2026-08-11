@@ -33,6 +33,12 @@ baselinker:
   # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk).
   # 19 = ta sama umowna wartosc, ktora feed Shoptet wpisuje w STOCK VALUE.
   stock-when-available: 19
+  # false = pipeline NIE wysyla stanow przez API i zeruje swoje wpisy w magazynie
+  # bl_ (produkty sa powiazane ze sklepem, wiec stan plynie sciezka
+  # Shoptet -> shop_4014740; wysylka przez API dublowalaby stan: 19+19=38).
+  # true = pipeline wysyla stany do magazynu bl_ (uzyj, gdyby produkty przestaly
+  # byc powiazane ze sklepem i shop_ przestal dostarczac stany).
+  push-stock: false
   # Feed Carinio podaje ceny BRUTTO (sugerowana detaliczna) - NIE doliczamy nic.
   # vat-rate to procent doliczany do ceny z feedu przed konwersja walut (0 = cena 1:1 z feedu).
   vat-rate: 0
