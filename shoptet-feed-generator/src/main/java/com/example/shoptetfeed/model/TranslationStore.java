@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Cache tłumaczeń v2 – persystowany w output/translation-cache.json.
@@ -35,6 +37,13 @@ public class TranslationStore {
 
     /** miesiąc (yyyy-MM) → (provider → zużyte znaki) */
     private Map<String, Map<String, Long>> usage = new LinkedHashMap<>();
+
+    /**
+     * SKU produktów, które TEN pipeline kiedykolwiek wypchnął do BaseLinkera.
+     * Katalog BL jest współdzielony z innym asortymentem – zerowanie stanów
+     * "produktów zniknietych z feedu" wolno robić WYŁĄCZNIE w obrębie tej listy.
+     */
+    private Set<String> managedSkus = new LinkedHashSet<>();
 
     @JsonIgnore
     public Map<String, String> lang(String lang) {
