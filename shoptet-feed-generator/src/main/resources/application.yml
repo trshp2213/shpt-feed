@@ -30,8 +30,9 @@ baselinker:
   # Opcjonalne: wymagane tylko gdy konto ma wiecej niz jeden katalog/magazyn
   inventory-id: ${BASELINKER_INVENTORY_ID:}
   warehouse-id: ${BASELINKER_WAREHOUSE_ID:}
-  # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk)
-  stock-when-available: 50
+  # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk).
+  # 19 = ta sama umowna wartosc, ktora feed Shoptet wpisuje w STOCK VALUE.
+  stock-when-available: 19
   # Feed Carinio podaje ceny BRUTTO (sugerowana detaliczna) - NIE doliczamy nic.
   # vat-rate to procent doliczany do ceny z feedu przed konwersja walut (0 = cena 1:1 z feedu).
   vat-rate: 0
@@ -60,6 +61,9 @@ output:
   cache-path: output/translation-cache.json
 
 shoptet:
+  # Stawka VAT sklepu (Slowacja: 23%) - uzywana do wyliczenia PRICE (netto)
+  # z ceny brutto feedu; PRICE_VAT = cena brutto 1:1 z feedu.
+  vat-rate: 23
   parent-category: "DOMÁCE ZVIERATÁ"
   currency: EUR
   vat: 20
