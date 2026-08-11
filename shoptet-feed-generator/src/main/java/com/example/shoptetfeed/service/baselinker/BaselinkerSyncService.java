@@ -297,6 +297,11 @@ public class BaselinkerSyncService {
         if (p.getWeight() > 0) {
             params.put("weight", p.getWeight());
         }
+        // Wymiary sparsowane z opisu feedu ("wymiary: 65 x 100 cm") – natywne
+        // pola BL widoczne na karcie produktu i formularzu wystawiania oferty.
+        if (p.getWidthCm() > 0) params.put("width", p.getWidthCm());
+        if (p.getLengthCm() > 0) params.put("length", p.getLengthCm());
+        if (p.getHeightCm() > 0) params.put("height", p.getHeightCm());
 
         params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
         params.put("prices", buildPrices(p, rates, groupsByCurrency));
