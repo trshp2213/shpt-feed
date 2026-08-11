@@ -72,6 +72,10 @@ public class FeedGeneratorRunner implements CommandLineRunner {
         //    a sync failure never breaks the Shoptet feed above)
         baselinkerSyncService.sync(products, store, rates);
 
+        // 9. Drugi zapis: sync uzupełnia store.managedSkus (lista SKU zarządzanych
+        //    przez pipeline w BL) – bez tego zapisu nie przetrwałaby między runami
+        cacheService.save(store);
+
         log.info("=== Feed generation complete. {} products written to Shoptet feed. ===", shoptetItems.size());
     }
 }
