@@ -122,8 +122,13 @@ public class BaselinkerSyncService {
                 if (existingId != null) updated++; else created++;
             }
 
-            // 6. Produkty, które zniknęły z feedu → stan 0
-            int zeroed = zeroStockForMissing(inventoryId, existingBySku, feedSkus, warehouseKey);
+            // 6. Stan 0 WYŁĄCZNIE dla produktów, które ten pipeline sam wcześniej
+            //    wypchnął (store.managedSkus), a które zniknęły z feedu. Katalog
+            //    jest współdzielony z ~1000 innych produktów – nie wolno ich dotykać.
+            int zeroed = zeroStockForMissing(inventoryId, existingBySku, feedSkus, warehouseKey, store);
+
+            // 7. Aktualizacja listy zarządzanych SKU (persystowana z cache tłumaczeń)
+            store.getManagedSkus().addAll(feedSkus);
 
             log.info("BaseLinker sync complete: {} created, {} updated, {} skipped, {} zeroed (gone from feed)",
                     created, updated, skipped, zeroed);
@@ -387,29 +392,41 @@ public class BaselinkerSyncService {
     }
 
     private int zeroStockForMissing(String inventoryId, Map<String, String> existingBySku,
-                                    Set<String> feedSkus, String warehouseKey) throws Exception {
+                                    Set<String> feedSkus, String warehouseKey,
+                                    TranslationStore store) throws Exception {
         if (warehouseKey == null) {
             log.info("No API-editable warehouse – skipping stock zeroing for products gone from feed "
                     + "(stock is managed by the store sync)");
             return 0;
         }
-        Map<String, Object> productsToZero = new LinkedHashMap<>();
-        for (Map.Entry<String, String> entry : existingBySku.entrySet()) {
-            if (!feedSkus.contains(entry.getKey())) {
-                productsToZero.put(entry.getValue(), Map.of(warehouseKey, 0));
-            }
-        }
-        if (productsToZero.isEmpty()) {
+        // Kandydaci: tylko SKU, które pipeline sam wypchnął, nie ma ich w bieżącym
+        // feedzie, a wciąż istnieją w katalogu BL. Nigdy produkty spoza feedu Carinio.
+        Set<String> toZero = new LinkedHashSet<>(store.getManagedSkus());
+        toZero.removeAll(feedSkus);
+        toZero.retainAll(existingBySku.keySet());
+        if (toZero.isEmpty()) {
             return 0;
         }
-        client.call("updateInventoryProductsStock",
-                Map.of("inventory_id", inventoryId, "products", productsToZero));
-        for (String sku : existingBySku.keySet()) {
-            if (!feedSkus.contains(sku)) {
-                log.info("Product sku={} gone from feed – stock zeroed", sku);
+
+        // Limit API: max 1000 produktów per wywołanie updateInventoryProductsStock
+        Map<String, Object> batch = new LinkedHashMap<>();
+        for (String sku : toZero) {
+            batch.put(existingBySku.get(sku), Map.of(warehouseKey, 0));
+            log.info("Product sku={} gone from feed – stock zeroed", sku);
+            if (batch.size() == 1000) {
+                client.call("updateInventoryProductsStock",
+                        Map.of("inventory_id", inventoryId, "products", batch));
+                batch = new LinkedHashMap<>();
             }
         }
-        return productsToZero.size();
+        if (!batch.isEmpty()) {
+            client.call("updateInventoryProductsStock",
+                    Map.of("inventory_id", inventoryId, "products", batch));
+        }
+
+        // Wyzerowane przestają być "zarządzane"; wrócą na listę, jeśli wrócą do feedu
+        store.getManagedSkus().removeAll(toZero);
+        return toZero.size();
     }
 
     // ------------------------------------------------------------------
