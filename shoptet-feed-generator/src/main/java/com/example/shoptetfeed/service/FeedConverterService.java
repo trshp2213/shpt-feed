@@ -71,12 +71,17 @@ public class FeedConverterService {
         String availability = mapAvailability(p.getAvailabilityText());
         String manufacturer = p.getBrand().isBlank() ? "Carinio" : p.getBrand();
 
+        // Krótki opis: pierwsze zdanie PRZETŁUMACZONEGO opisu. Wycinamy z gotowego
+        // tłumaczenia, więc nie kosztuje ani jednego znaku budżetu DeepL/Azure.
+        String shortDescription = firstSentence(translatedDesc);
+
         return ShoptetItem.builder()
                 .code(p.getCode())
                 .externalCode(p.getId())
                 .productUrl(p.getUrl())
                 .name(translatedName)
                 .description(translatedDesc)
+                .shortDescription(shortDescription)
                 .manufacturer(manufacturer)
                 .category(fullCategory)
                 .ean(p.getEan())
@@ -84,10 +89,32 @@ public class FeedConverterService {
                 .currency(currency)
                 .availability(availability)
                 .weight(p.getWeight())
+                .widthCm(p.getWidthCm())
+                .lengthCm(p.getLengthCm())
+                .heightCm(p.getHeightCm())
                 .mainImage(p.getMainImage())
                 .additionalImages(p.getAdditionalImages())
                 .visibility("visible")
                 .build();
+    }
+
+    /**
+     * Pierwsze zdanie tekstu jako krótki opis:
+     * - szukamy końca zdania (". ") najwcześniej po 60. znaku, żeby nie uciąć
+     *   na skrócie typu "LOUIS." albo inicjale;
+     * - jeśli zdanie wyszłoby dłuższe niż 300 znaków, tniemy twardo na 300
+     *   po ostatniej pełnej spacji i dodajemy wielokropek.
+     */
+    private String firstSentence(String text) {
+        if (text == null || text.isBlank()) return null;
+        String t = text.trim();
+        int end = t.indexOf(". ", 60);
+        if (end > 0 && end <= 300) {
+            return t.substring(0, end + 1);
+        }
+        if (t.length() <= 300) return t;
+        int cut = t.lastIndexOf(' ', 300);
+        return t.substring(0, cut > 0 ? cut : 300) + "…";
     }
 
     /**

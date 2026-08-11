@@ -26,6 +26,10 @@ public class ShoptetXmlWriterService {
     @Value("${output.feed-path}")
     private String feedPath;
 
+    /** Stawka VAT sklepu (SK: 23%). Cena z feedu jest BRUTTO → PRICE_VAT = cena, PRICE = cena / (1 + vat). */
+    @Value("${shoptet.vat-rate:23}")
+    private double vatRate;
+
     public void write(List<ShoptetItem> items) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -41,6 +45,7 @@ public class ShoptetXmlWriterService {
 
             // ── Podstawowe informacje ──────────────────────────────────────
             addEl(doc, shopItem, "NAME", item.getName());
+            addEl(doc, shopItem, "SHORT_DESCRIPTION", item.getShortDescription());
             addEl(doc, shopItem, "DESCRIPTION", item.getDescription());
             addEl(doc, shopItem, "MANUFACTURER", item.getManufacturer());
             addEl(doc, shopItem, "VISIBILITY", item.getVisibility());
@@ -72,11 +77,22 @@ public class ShoptetXmlWriterService {
             }
 
             // ── Cena ──────────────────────────────────────────────────────
+            // item.getPrice() to cena BRUTTO (feed Carinio podaje sugerowaną
+            // cenę detaliczną z VAT). Shoptet w imporcie traktuje:
+            //   PRICE     = cena bez VAT
+            //   PRICE_VAT = cena z VAT (to ma widzieć klient w sklepie)
+            // Wysyłamy oba, żeby sklep pokazał dokładnie cenę z feedu
+            // niezależnie od globalnych ustawień cen w adminie.
             addEl(doc, shopItem, "CURRENCY", item.getCurrency());
-            String priceStr = BigDecimal.valueOf(item.getPrice())
+            String priceVatStr = BigDecimal.valueOf(item.getPrice())
                     .setScale(2, RoundingMode.HALF_UP)
                     .toPlainString();
-            addEl(doc, shopItem, "PRICE", priceStr);
+            String priceNetStr = BigDecimal.valueOf(item.getPrice() / (1.0 + vatRate / 100.0))
+                    .setScale(2, RoundingMode.HALF_UP)
+                    .toPlainString();
+            addEl(doc, shopItem, "PRICE", priceNetStr);
+            addEl(doc, shopItem, "PRICE_VAT", priceVatStr);
+            addEl(doc, shopItem, "VAT", BigDecimal.valueOf(vatRate).stripTrailingZeros().toPlainString());
 
             // ── Dostępność + stan magazynowy ──────────────────────────────
             // Skladom    → VALUE=19 (dostępny u dostawcy)
@@ -108,6 +124,19 @@ public class ShoptetXmlWriterService {
                         .toPlainString();
                 addEl(doc, logistic, "WEIGHT", weightStr);
             }
+
+            // ── Wymiary produktu (parsowane z opisu) ──────────────────────
+            // Blok DIMENSIONS wg spec Shoptet: HEIGHT / WIDTH / DEPTH.
+            // Mapowanie z feedu: szerokość→WIDTH, długość→DEPTH, wysokość→HEIGHT.
+            if (item.getWidthCm() > 0 && item.getLengthCm() > 0) {
+                Element dimensions = doc.createElement("DIMENSIONS");
+                shopItem.appendChild(dimensions);
+                if (item.getHeightCm() > 0) {
+                    addEl(doc, dimensions, "HEIGHT", formatDim(item.getHeightCm()));
+                }
+                addEl(doc, dimensions, "WIDTH", formatDim(item.getWidthCm()));
+                addEl(doc, dimensions, "DEPTH", formatDim(item.getLengthCm()));
+            }
         }
 
         // ── Zapis do pliku ────────────────────────────────────────────────
@@ -123,6 +152,10 @@ public class ShoptetXmlWriterService {
 
         transformer.transform(new DOMSource(doc), new StreamResult(outputFile));
         log.info("Feed written to {} ({} products)", feedPath, items.size());
+    }
+
+    private String formatDim(double cm) {
+        return BigDecimal.valueOf(cm).stripTrailingZeros().toPlainString();
     }
 
     private void addEl(Document doc, Element parent, String tag, String text) {

@@ -129,6 +129,12 @@ public class EuroCartFetcherService {
             }
         }
 
+        // ── Wymiary z opisu ───────────────────────────────────────────────
+        // Feed nie ma strukturalnego pola wymiarów – są tylko w tekście opisu,
+        // np. "wymiary: 65 x 100 cm" albo "wymiary 90 x 135". Parsujemy do
+        // 3 liczb (szer x dł x wys); brak dopasowania = zera (pola pomijane).
+        double[] dims = parseDimensions(description);
+
         return EuroCartProduct.builder()
                 .id(id)
                 .url(url)
@@ -144,7 +150,35 @@ public class EuroCartFetcherService {
                 .mainImage(mainImage)
                 .additionalImages(additionalImages)
                 .ean(ean)
+                .widthCm(dims[0])
+                .lengthCm(dims[1])
+                .heightCm(dims[2])
                 .build();
+    }
+
+    private static final java.util.regex.Pattern DIMENSIONS_PATTERN = java.util.regex.Pattern.compile(
+            "wymiar\\w*(?:\\s+\\p{L}+)?\\s*:?\\s*(\\d+(?:[.,]\\d+)?)\\s*[x×]\\s*(\\d+(?:[.,]\\d+)?)(?:\\s*[x×]\\s*(\\d+(?:[.,]\\d+)?))?",
+            java.util.regex.Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.UNICODE_CASE);
+
+    /** Zwraca [szerokość, długość, wysokość] w cm; 0.0 gdy nie znaleziono. */
+    private double[] parseDimensions(String description) {
+        double[] dims = new double[]{0, 0, 0};
+        if (description == null || description.isBlank()) return dims;
+        java.util.regex.Matcher m = DIMENSIONS_PATTERN.matcher(description);
+        if (m.find()) {
+            dims[0] = parseNum(m.group(1));
+            dims[1] = parseNum(m.group(2));
+            if (m.group(3) != null) dims[2] = parseNum(m.group(3));
+        }
+        return dims;
+    }
+
+    private double parseNum(String s) {
+        try {
+            return Double.parseDouble(s.replace(',', '.'));
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 
     /** Odczyt atrybutu z elementu (pusty string jeśli brak). */
