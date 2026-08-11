@@ -42,8 +42,11 @@ public class BaselinkerSyncService {
     @Value("${baselinker.warehouse-id:}")
     private String configuredWarehouseId;
 
-    @Value("${baselinker.stock-when-available:50}")
+    @Value("${baselinker.stock-when-available:19}")
     private int stockWhenAvailable;
+
+    @Value("${baselinker.push-stock:true}")
+    private boolean pushStock;
 
     @Value("${baselinker.vat-rate:0}")
     private double vatRate;
@@ -122,10 +125,14 @@ public class BaselinkerSyncService {
                 if (existingId != null) updated++; else created++;
             }
 
-            // 6. Stan 0 WYŁĄCZNIE dla produktów, które ten pipeline sam wcześniej
-            //    wypchnął (store.managedSkus), a które zniknęły z feedu. Katalog
-            //    jest współdzielony z ~1000 innych produktów – nie wolno ich dotykać.
-            int zeroed = zeroStockForMissing(inventoryId, existingBySku, feedSkus, warehouseKey, store);
+            // 6. Obsługa stanów po upsercie:
+            //    - push-stock=true: stan 0 dla zarządzanych SKU zniknietych z feedu
+            //    - push-stock=false: stany dostarcza sync sklepowy (shop_4014740);
+            //      zerujemy WSZYSTKIE swoje wpisy w magazynie bl_, żeby suma
+            //      magazynów nie dublowała stanu (19+19=38)
+            int zeroed = pushStock
+                    ? zeroStockForMissing(inventoryId, existingBySku, feedSkus, warehouseKey, store)
+                    : neutralizeBlStock(inventoryId, existingBySku, feedSkus, warehouseKey, store);
 
             // 7. Aktualizacja listy zarządzanych SKU (persystowana z cache tłumaczeń)
             store.getManagedSkus().addAll(feedSkus);
@@ -310,7 +317,7 @@ public class BaselinkerSyncService {
 
         params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
         params.put("prices", buildPrices(p, rates, groupsByCurrency));
-        if (warehouseKey != null) {
+        if (pushStock && warehouseKey != null) {
             params.put("stock", Map.of(warehouseKey, isAvailable(p.getAvailabilityText()) ? stockWhenAvailable : 0));
         }
         params.put("images", buildImages(p));
@@ -389,6 +396,44 @@ public class BaselinkerSyncService {
             }
         }
         return images;
+    }
+
+    /**
+     * Tryb push-stock=false: stany dostarcza synchronizacja sklepowa, więc wpisy
+     * tego pipeline'u w magazynie bl_ tylko dublują stan w "sumie magazynów".
+     * Zerujemy je dla wszystkich zarządzanych SKU (bieżących i historycznych),
+     * które istnieją w katalogu. Idempotentne – kolejne runy to no-op po stronie
+     * wartości. Cudzych produktów nie dotykamy.
+     */
+    private int neutralizeBlStock(String inventoryId, Map<String, String> existingBySku,
+                                  Set<String> feedSkus, String warehouseKey,
+                                  TranslationStore store) throws Exception {
+        if (warehouseKey == null) {
+            return 0;
+        }
+        Set<String> toNeutralize = new LinkedHashSet<>(store.getManagedSkus());
+        toNeutralize.addAll(feedSkus);
+        toNeutralize.retainAll(existingBySku.keySet());
+        if (toNeutralize.isEmpty()) {
+            return 0;
+        }
+
+        Map<String, Object> batch = new LinkedHashMap<>();
+        for (String sku : toNeutralize) {
+            batch.put(existingBySku.get(sku), Map.of(warehouseKey, 0));
+            if (batch.size() == 1000) {
+                client.call("updateInventoryProductsStock",
+                        Map.of("inventory_id", inventoryId, "products", batch));
+                batch = new LinkedHashMap<>();
+            }
+        }
+        if (!batch.isEmpty()) {
+            client.call("updateInventoryProductsStock",
+                    Map.of("inventory_id", inventoryId, "products", batch));
+        }
+        log.info("push-stock=false: neutralized {} stock entries in warehouse {} "
+                + "(stock is delivered by the store sync)", toNeutralize.size(), warehouseKey);
+        return 0; // nic nie "zniknęło z feedu" – to tylko normalizacja
     }
 
     private int zeroStockForMissing(String inventoryId, Map<String, String> existingBySku,
