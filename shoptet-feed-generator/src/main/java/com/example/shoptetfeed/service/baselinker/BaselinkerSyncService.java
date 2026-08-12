@@ -48,6 +48,9 @@ public class BaselinkerSyncService {
     @Value("${baselinker.push-stock:true}")
     private boolean pushStock;
 
+    @Value("${baselinker.push-prices:true}")
+    private boolean pushPrices;
+
     @Value("${baselinker.vat-rate:0}")
     private double vatRate;
 
@@ -99,7 +102,13 @@ public class BaselinkerSyncService {
             // 2. Grupy cenowe → waluta → lista group_id.
             //    Ten sam wzorzec co magazyny: getInventoryPriceGroups zwraca grupy
             //    CAŁEGO konta, a katalog akceptuje tylko te z inventory.price_groups[].
-            Map<String, List<String>> groupsByCurrency = fetchPriceGroups(inventory);
+            Map<String, List<String>> groupsByCurrency = pushPrices
+                    ? fetchPriceGroups(inventory)
+                    : java.util.Collections.emptyMap();
+            if (!pushPrices) {
+                log.info("push-prices=false: ceny sa zarzadzane w BaseLinkerze "
+                        + "(grupy cenowe z mnoznikiem) - pipeline ich nie wysyla");
+            }
 
             // 3. Magazyn – NIE osobnym wywołaniem API, tylko wprost z odpowiedzi
             //    getInventories (pole default_warehouse), która jest jedynym
@@ -329,7 +338,9 @@ public class BaselinkerSyncService {
         if (p.getHeightCm() > 0) params.put("height", p.getHeightCm());
 
         params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
-        params.put("prices", buildPrices(p, rates, groupsByCurrency));
+        if (pushPrices) {
+            params.put("prices", buildPrices(p, rates, groupsByCurrency));
+        }
         if (pushStock && warehouseKey != null) {
             params.put("stock", Map.of(warehouseKey, isAvailable(p.getAvailabilityText()) ? stockWhenAvailable : 0));
         }
