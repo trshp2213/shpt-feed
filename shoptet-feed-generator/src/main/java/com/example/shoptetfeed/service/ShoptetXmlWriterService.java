@@ -114,28 +114,33 @@ public class ShoptetXmlWriterService {
             }
             addEl(doc, shopItem, "VISIBLE", "1");
 
-            // ── Logistyka ─────────────────────────────────────────────────
-            // Wagę wpisujemy tylko jeśli faktycznie jest w feedzie (> 0)
-            if (item.getWeight() > 0) {
+            // ── Logistyka: waga + wymiary w JEDNYM bloku LOGISTIC ───────────
+            // Poprzednia wersja pakowała wymiary w osobny wrapper <DIMENSIONS>,
+            // którego oficjalna tabela tagów Shoptetu (Produkty → Import) nie
+            // wymienia w ogóle – zna tylko płaskie "height"/"width"/"depth",
+            // wymienione w tym samym rzędzie co "weight". W UI Shoptetu Hmotnosť/
+            // Šírka/Dĺžka/Výška też siedzą razem w jednej sekcji "Detail produktu"
+            // na zakładce Logistika. Stąd: WEIGHT/WIDTH/DEPTH/HEIGHT jako rodzeństwo
+            // wewnątrz jednego <LOGISTIC>, nie osobny wrapper.
+            boolean hasWeight = item.getWeight() > 0;
+            boolean hasDims = item.getWidthCm() > 0 && item.getLengthCm() > 0;
+            if (hasWeight || hasDims) {
                 Element logistic = doc.createElement("LOGISTIC");
                 shopItem.appendChild(logistic);
-                String weightStr = BigDecimal.valueOf(item.getWeight())
-                        .setScale(3, RoundingMode.HALF_UP)
-                        .toPlainString();
-                addEl(doc, logistic, "WEIGHT", weightStr);
-            }
-
-            // ── Wymiary produktu (parsowane z opisu) ──────────────────────
-            // Blok DIMENSIONS wg spec Shoptet: HEIGHT / WIDTH / DEPTH.
-            // Mapowanie z feedu: szerokość→WIDTH, długość→DEPTH, wysokość→HEIGHT.
-            if (item.getWidthCm() > 0 && item.getLengthCm() > 0) {
-                Element dimensions = doc.createElement("DIMENSIONS");
-                shopItem.appendChild(dimensions);
-                if (item.getHeightCm() > 0) {
-                    addEl(doc, dimensions, "HEIGHT", formatDim(item.getHeightCm()));
+                if (hasWeight) {
+                    String weightStr = BigDecimal.valueOf(item.getWeight())
+                            .setScale(3, RoundingMode.HALF_UP)
+                            .toPlainString();
+                    addEl(doc, logistic, "WEIGHT", weightStr);
                 }
-                addEl(doc, dimensions, "WIDTH", formatDim(item.getWidthCm()));
-                addEl(doc, dimensions, "DEPTH", formatDim(item.getLengthCm()));
+                if (hasDims) {
+                    // Mapowanie z feedu: szerokość→WIDTH, długość→DEPTH, wysokość→HEIGHT.
+                    addEl(doc, logistic, "WIDTH", formatDim(item.getWidthCm()));
+                    addEl(doc, logistic, "DEPTH", formatDim(item.getLengthCm()));
+                    if (item.getHeightCm() > 0) {
+                        addEl(doc, logistic, "HEIGHT", formatDim(item.getHeightCm()));
+                    }
+                }
             }
         }
 
