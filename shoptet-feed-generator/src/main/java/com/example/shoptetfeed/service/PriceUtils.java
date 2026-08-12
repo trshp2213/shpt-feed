@@ -5,16 +5,15 @@ import java.math.RoundingMode;
 import java.util.Set;
 
 /**
- * Price rounding rules (identyczne dla groszy i pełnych jednostek):
- *  - Last digit is 0 or 9 → keep as-is
- *  - Any other last digit → round UP to the nearest 9
+ * Price rounding rules:
  *
- * Waluty groszowe (EUR, PLN, RON): reguła działa na ostatniej cyfrze groszy.
- *   2.80 → 2.80 | 2.81 → 2.89 | 2.91 → 2.99
+ * roundPrice / roundPriceWholeUnits / convertAndRoundFor – stara reguła 0/9,
+ * zachowana dla ewentualnego ponownego włączenia wysyłki cen do BaseLinkera
+ * (baselinker.push-prices), obecnie nieużywana w praktyce (push-prices: false).
  *
- * Waluty bezgroszowe (CZK, HUF): ceny na pełnych jednostkach,
- * reguła działa na ostatniej cyfrze kwoty.
- *   840 → 840 | 843 → 849 | 3985 → 3989
+ * roundToNearestTenCents – AKTUALNA reguła dla ceny w feedzie Shoptet: cena
+ * zaokrąglana do pełnych 10 eurocentów (,10 ,20 ,30 ...), najbliższa wartość
+ * (HALF_UP przy remisie). Używana przez convertAndRound.
  */
 public final class PriceUtils {
 
@@ -23,6 +22,7 @@ public final class PriceUtils {
 
     private PriceUtils() {}
 
+    /** Stara reguła 0/9 – patrz komentarz klasy. Zachowana, nieużywana obecnie. */
     public static double roundPrice(double price) {
         // Use BigDecimal to avoid floating-point precision issues
         BigDecimal bd = BigDecimal.valueOf(price).setScale(2, RoundingMode.HALF_UP);
@@ -34,6 +34,19 @@ public final class PriceUtils {
         }
 
         return BigDecimal.valueOf(cents).movePointLeft(2).doubleValue();
+    }
+
+    /**
+     * Zaokrąglenie do pełnych 10 eurocentów (0,10 / 0,20 / 0,30 ...),
+     * do najbliższej wartości (remis w górę). Reguła aktualnie używana
+     * dla ceny w feedzie Shoptet.
+     */
+    public static double roundToNearestTenCents(double price) {
+        BigDecimal bd = BigDecimal.valueOf(price)
+                .divide(BigDecimal.valueOf(0.10), 10, RoundingMode.HALF_UP)
+                .setScale(0, RoundingMode.HALF_UP)
+                .multiply(BigDecimal.valueOf(0.10));
+        return bd.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
     /** Zaokrąglenie 0/9 na pełnych jednostkach (CZK, HUF). */
@@ -49,12 +62,12 @@ public final class PriceUtils {
     }
 
     /**
-     * Converts PLN price to EUR using the given rate, then applies rounding.
-     * (Zachowana dla zgodności z FeedConverterService / feedem Shoptet.)
+     * Converts PLN price to EUR using the given (obecnie stałego, patrz
+     * shoptet.eur-rate) rate, then rounds to nearest 10 eurocents.
      */
     public static double convertAndRound(double priceInPln, double plnPerEurRate) {
         double eur = priceInPln / plnPerEurRate;
-        return roundPrice(eur);
+        return roundToNearestTenCents(eur);
     }
 
     /**
