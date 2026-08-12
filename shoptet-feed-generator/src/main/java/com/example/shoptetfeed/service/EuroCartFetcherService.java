@@ -156,19 +156,51 @@ public class EuroCartFetcherService {
                 .build();
     }
 
+    // Wzorzec 1: "wymiary [...] 58cm x 82cm x 107cm" / "wymiary: 65 x 100 cm".
+    // [^\d]{0,60}? pozwala na dowolną liczbę słów między "wymiar" a liczbami
+    // (np. "wymiary rozłożonego wózka:"), a opcjonalne cm/mm między liczbą
+    // a "x" obsługuje zapis "58cm x 82cm" (jednostka wtrącona przed mnożnikiem).
     private static final java.util.regex.Pattern DIMENSIONS_PATTERN = java.util.regex.Pattern.compile(
-            "wymiar\\w*(?:\\s+\\p{L}+)?\\s*:?\\s*(\\d+(?:[.,]\\d+)?)\\s*[x×]\\s*(\\d+(?:[.,]\\d+)?)(?:\\s*[x×]\\s*(\\d+(?:[.,]\\d+)?))?",
+            "wymiar\\w*[^\\d]{0,60}?(\\d+(?:[.,]\\d+)?)\\s*(?:cm|mm)?\\s*[x×]\\s*"
+                    + "(\\d+(?:[.,]\\d+)?)\\s*(?:cm|mm)?(?:\\s*[x×]\\s*(\\d+(?:[.,]\\d+)?))?",
             java.util.regex.Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.UNICODE_CASE);
 
-    /** Zwraca [szerokość, długość, wysokość] w cm; 0.0 gdy nie znaleziono. */
+    // Wzorzec 2 (fallback): opisy typu "Długość: 56 cm Szerokość: 36 cm Wysokość: 36 cm"
+    // – trzy osobne etykietowane wartości zamiast "A x B x C". Kolejność w tekście
+    // dowolna; mapowanie jest jednoznaczne przez samą etykietę, nie pozycję.
+    private static final java.util.regex.Pattern LEN_PATTERN = java.util.regex.Pattern.compile(
+            "d[łl]ugo[śs][ćc]\\s*:?\\s*(\\d+(?:[.,]\\d+)?)\\s*cm", java.util.regex.Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.UNICODE_CASE);
+    private static final java.util.regex.Pattern WID_PATTERN = java.util.regex.Pattern.compile(
+            "szeroko[śs][ćc]\\s*:?\\s*(\\d+(?:[.,]\\d+)?)\\s*cm", java.util.regex.Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.UNICODE_CASE);
+    private static final java.util.regex.Pattern HEI_PATTERN = java.util.regex.Pattern.compile(
+            "wysoko[śs][ćc]\\s*:?\\s*(\\d+(?:[.,]\\d+)?)\\s*cm", java.util.regex.Pattern.CASE_INSENSITIVE | java.util.regex.Pattern.UNICODE_CASE);
+
+    /**
+     * Zwraca [szerokość, długość, wysokość] w cm; 0.0 gdy nie znaleziono.
+     * Produkty bez wymiarów w opisie (np. ubranka rozmiarowane S–XXL) legalnie
+     * zwracają same zera – Carinio po prostu nie podaje dla nich centymetrów.
+     */
     private double[] parseDimensions(String description) {
         double[] dims = new double[]{0, 0, 0};
         if (description == null || description.isBlank()) return dims;
+
         java.util.regex.Matcher m = DIMENSIONS_PATTERN.matcher(description);
         if (m.find()) {
             dims[0] = parseNum(m.group(1));
             dims[1] = parseNum(m.group(2));
             if (m.group(3) != null) dims[2] = parseNum(m.group(3));
+            return dims;
+        }
+
+        // Fallback: format etykietowany. Wymagamy przynajmniej długości i szerokości,
+        // żeby nie łapać przypadkowej pojedynczej wzmianki o "wysokości" w opisie.
+        java.util.regex.Matcher lenM = LEN_PATTERN.matcher(description);
+        java.util.regex.Matcher widM = WID_PATTERN.matcher(description);
+        if (lenM.find() && widM.find()) {
+            dims[1] = parseNum(lenM.group(1));
+            dims[0] = parseNum(widM.group(1));
+            java.util.regex.Matcher heiM = HEI_PATTERN.matcher(description);
+            if (heiM.find()) dims[2] = parseNum(heiM.group(1));
         }
         return dims;
     }
