@@ -77,21 +77,20 @@ public class ShoptetXmlWriterService {
             }
 
             // ── Cena ──────────────────────────────────────────────────────
-            // item.getPrice() to cena BRUTTO (feed Carinio podaje sugerowaną
-            // cenę detaliczną z VAT). Shoptet w imporcie traktuje:
-            //   PRICE     = cena bez VAT
-            //   PRICE_VAT = cena z VAT (to ma widzieć klient w sklepie)
-            // Wysyłamy oba, żeby sklep pokazał dokładnie cenę z feedu
-            // niezależnie od globalnych ustawień cen w adminie.
+            // PRICE i PRICE_VAT trzymają TĘ SAMĄ wartość brutto, tak jak reszta
+            // katalogu (np. Bexa, gdzie PRICE od zawsze = cena sprzedaży wprost,
+            // bez podziału netto/brutto). Wcześniej PRICE było netto - spójne
+            // z frontem sklepu (który i tak priorytetowo pokazuje PRICE_VAT),
+            // ale niespójne z synchronizacją "sklep -> BaseLinker" (Integracje ->
+            // abckociky.sk -> Ceny), która kopiuje wprost wartość PRICE do grupy
+            // cenowej Výchozí - przez co Carinio miało tam netto (12.35), a cała
+            // reszta katalogu (Bexa i inni) ma tam brutto (39.90). Wyrównujemy.
             addEl(doc, shopItem, "CURRENCY", item.getCurrency());
-            String priceVatStr = BigDecimal.valueOf(item.getPrice())
+            String priceStr = BigDecimal.valueOf(item.getPrice())
                     .setScale(2, RoundingMode.HALF_UP)
                     .toPlainString();
-            String priceNetStr = BigDecimal.valueOf(item.getPrice() / (1.0 + vatRate / 100.0))
-                    .setScale(2, RoundingMode.HALF_UP)
-                    .toPlainString();
-            addEl(doc, shopItem, "PRICE", priceNetStr);
-            addEl(doc, shopItem, "PRICE_VAT", priceVatStr);
+            addEl(doc, shopItem, "PRICE", priceStr);
+            addEl(doc, shopItem, "PRICE_VAT", priceStr);
             addEl(doc, shopItem, "VAT", BigDecimal.valueOf(vatRate).stripTrailingZeros().toPlainString());
 
             // ── Dostępność + stan magazynowy ──────────────────────────────
