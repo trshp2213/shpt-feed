@@ -119,7 +119,20 @@ public class BaselinkerSyncService {
                     continue;
                 }
                 feedSkus.add(p.getCode());
+                // Dopasowanie: najpierw po docelowym SKU (product_code). Jeśli nie
+                // znaleziono – MOSTEK MIGRACYJNY: produkt mógł zostać wcześniej
+                // utworzony z bugiem "Kod_towaru" (SKU = numeryczne id feedu, np.
+                // "1259"). Jednorazowo dopasuj po id, żeby zaktualizować SKU na
+                // właściwy zamiast tworzyć duplikat. Po jednym przebiegu wszystkie
+                // SKU są już poprawne i ta gałąź przestaje się uruchamiać sama.
                 String existingId = existingBySku.get(p.getCode());
+                if (existingId == null) {
+                    existingId = existingBySku.get(p.getId());
+                    if (existingId != null) {
+                        log.info("Migrating sku: product id={} had legacy numeric SKU '{}' – "
+                                + "correcting to '{}'", p.getId(), p.getId(), p.getCode());
+                    }
+                }
                 upsertProduct(inventoryId, existingId, p, store, rates, groupsByCurrency, warehouseKey,
                         defaultLang, availableLanguages);
                 if (existingId != null) updated++; else created++;
