@@ -90,8 +90,15 @@ public class EuroCartFetcherService {
         double price  = priceStr.isBlank()  ? 0.0 : Double.parseDouble(priceStr);
         double weight = weightStr.isBlank() ? 0.0 : Double.parseDouble(weightStr);
 
-        // Kod_towaru – fallback na id jeśli tag nie istnieje
-        String code = tag(o, "Kod_towaru");
+        // product_code – fallback na id jeśli tag nie istnieje.
+        // WAŻNE: przez cały dotychczasowy okres działania pipeline'u ten kod
+        // szukał tagu "Kod_towaru", którego feed Carinio nigdy nie miał (prawdziwy
+        // tag to <product_code>) – fallback na id uruchamiał się więc zawsze, dla
+        // każdego produktu. Wszystkie SKU już wypchnięte do BaseLinkera są numeryczne
+        // (np. "1259"), nie w formacie Carinio ("KUR/CAR/..."). Patrz mostek
+        // migracyjny w BaselinkerSyncService (dopasowanie po id jako fallback),
+        // który jednorazowo poprawi SKU w BL bez tworzenia duplikatów.
+        String code = tag(o, "product_code");
         if (code.isBlank()) code = id;
 
         // ── Tagi dzieci ────────────────────────────────────────────────────
