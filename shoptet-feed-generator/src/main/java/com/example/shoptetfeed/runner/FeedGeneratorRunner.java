@@ -32,6 +32,12 @@ public class FeedGeneratorRunner implements CommandLineRunner {
     @Value("${currency.targets}")
     private List<String> targetCurrencies;
 
+    // Stały kurs PLN->EUR dla ceny w feedzie Shoptet (nie NBP). Cena zmienia
+    // się tylko wtedy, gdy Carinio zmieni cenę w swoim feedzie - nie przy
+    // codziennych wahaniach kursu. Zmieniaj ręcznie, gdy uznasz to za potrzebne.
+    @Value("${shoptet.eur-rate}")
+    private double shoptetEurRate;
+
     @Override
     public void run(String... args) throws Exception {
         log.info("=== Feed Generator starting (Shoptet + BaseLinker) ===");
@@ -56,11 +62,14 @@ public class FeedGeneratorRunner implements CommandLineRunner {
         TranslationStore store = cacheService.load();
         translationService.translateAll(textsToTranslate, store);
 
-        // 4. NBP rates for all target currencies (EUR, CZK, HUF, RON)
+        // 4. NBP rates – zachowane dla BaselinkerSyncService (na wypadek
+        //    ponownego włączenia baselinker.push-prices w przyszłości).
+        //    Cena w feedzie Shoptet NIE używa już tych kursów - patrz krok 5.
         Map<String, Double> rates = nbpService.getRates(targetCurrencies);
 
-        // 5. Convert to Shoptet format (unchanged: Slovak texts + EUR prices)
-        List<ShoptetItem> shoptetItems = converterService.convert(products, store.lang("sk"), rates.get("EUR"));
+        // 5. Convert to Shoptet format – stały kurs shoptet.eur-rate (nie NBP),
+        //    zaokrąglenie do pełnych 10 eurocentów (patrz PriceUtils).
+        List<ShoptetItem> shoptetItems = converterService.convert(products, store.lang("sk"), shoptetEurRate);
 
         // 6. Write Shoptet XML
         writerService.write(shoptetItems);
