@@ -33,12 +33,18 @@ baselinker:
   # Stan magazynowy wysylany dla produktow "Dostepny" (feed nie podaje sztuk).
   # 19 = ta sama umowna wartosc, ktora feed Shoptet wpisuje w STOCK VALUE.
   stock-when-available: 19
-  # false = pipeline NIE wysyla stanow przez API i zeruje swoje wpisy w magazynie
-  # bl_ (produkty sa powiazane ze sklepem, wiec stan plynie sciezka
-  # Shoptet -> shop_4014740; wysylka przez API dublowalaby stan: 19+19=38).
-  # true = pipeline wysyla stany do magazynu bl_ (uzyj, gdyby produkty przestaly
-  # byc powiazane ze sklepem i shop_ przestal dostarczac stany).
-  push-stock: false
+  # true = pipeline wysyla stany do magazynu bl_ (Vychozi/bl_64293).
+  # WAZNE: integracje marketplace czytaja stan WYLACZNIE z magazynu Vychozi,
+  # wiec to on musi miec stan produktow Carinio. Widoczna na karcie "Suma"
+  # (Vychozi + abckociky.sk = 38) jest tylko kosmetyczna - dopoki zadna
+  # integracja nie jest ustawiona na "sume magazynow", nic sie nie dubluje.
+  # (Tak samo dziala reszta asortymentu, np. Bexa: 2 + 2, suma 4.)
+  push-stock: true
+  # false = pipeline NIE wysyla cen. Ceny per rynek ustawiasz w BaseLinkerze
+  # jako grupy cenowe z mnoznikiem od ceny bazowej. UWAGA: baza w BL ("Vychozi")
+  # jest nadpisywana przez sync ze Shoptetu wartoscia NETTO (element PRICE),
+  # wiec mnozniki licz od netto (rynki EUR: x1.23).
+  push-prices: false
   # Feed Carinio podaje ceny BRUTTO (sugerowana detaliczna) - NIE doliczamy nic.
   # vat-rate to procent doliczany do ceny z feedu przed konwersja walut (0 = cena 1:1 z feedu).
   vat-rate: 0
@@ -58,9 +64,10 @@ translation:
   monthly-limits: "{deepl: 480000, azure: 1900000}"
 
 currency:
-  # Waluty docelowe (poza PLN) - wszystkie z tabeli A NBP.
-  # BGN celowo brak: Bulgaria przeszla na EUR 1.01.2026, eMag BG zasilamy w EUR.
-  targets: EUR,CZK,HUF,RON
+  # Waluty docelowe. Przy push-prices: false potrzebny jest juz tylko EUR
+  # - do przeliczenia ceny PLN->EUR w feedzie Shoptet. Przeliczniki CZK/HUF/RON
+  # robi BaseLinker (grupy cenowe z mnoznikiem), wiec nie pobieramy ich kursow.
+  targets: EUR
 
 output:
   feed-path: output/feed.xml
