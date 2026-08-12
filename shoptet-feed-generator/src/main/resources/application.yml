@@ -74,9 +74,13 @@ output:
   cache-path: output/translation-cache.json
 
 shoptet:
-  # Stawka VAT sklepu (Slowacja: 23%) - uzywana do wyliczenia PRICE (netto)
-  # z ceny brutto feedu; PRICE_VAT = cena brutto 1:1 z feedu.
+  # Stawka VAT sklepu (Slowacja: 23%) - wysylana informacyjnie w tagu VAT.
+  # PRICE i PRICE_VAT trzymaja te sama wartosc brutto (patrz ShoptetXmlWriterService).
   vat-rate: 23
+  # Staly kurs PLN->EUR dla ceny w feedzie Shoptet - NIE z NBP. Cena zmienia sie
+  # tylko gdy Carinio zmieni cene w swoim feedzie, a nie przy kazdym wahaniu
+  # kursu waluty. Zmieniaj recznie, kiedy uznasz to za potrzebne.
+  eur-rate: 4.2
   parent-category: "DOMÁCE ZVIERATÁ"
   currency: EUR
   vat: 20
