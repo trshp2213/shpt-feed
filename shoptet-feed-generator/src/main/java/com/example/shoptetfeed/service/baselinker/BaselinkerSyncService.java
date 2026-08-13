@@ -337,7 +337,8 @@ public class BaselinkerSyncService {
         if (p.getLengthCm() > 0) params.put("length", p.getLengthCm());
         if (p.getHeightCm() > 0) params.put("height", p.getHeightCm());
 
-        params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages));
+        boolean isNewProduct = existingProductId == null;
+        params.put("text_fields", buildTextFields(p, store, defaultLang, availableLanguages, isNewProduct));
         if (pushPrices) {
             params.put("prices", buildPrices(p, rates, groupsByCurrency));
         }
@@ -349,27 +350,49 @@ public class BaselinkerSyncService {
         client.call("addInventoryProduct", params);
     }
 
+    /**
+     * Teksty do BaseLinkera. Wysyłamy WYŁĄCZNIE języki, których Shoptet fizycznie
+     * nie potrafi dostarczyć (pl - oryginał dla Allegro PL, oraz tłumaczenia
+     * cs/hu/de/fr/sl/ro/bg). Słowacki (sourceLang docelowego katalogu = defaultLang)
+     * NIE jest tu zarządzany przy aktualizacji – to samo pole "Nazwa produktu (SK)"
+     * próbuje ustawiać też natywna synchronizacja sklep→BaseLinker (Integracje →
+     * abckociky.sk), a dwóch niezależnych pisarzy do jednego pola to prosta droga
+     * do niedeterministycznych konfliktów. Wyjątek: przy TWORZENIU nowego produktu
+     * (isNewProduct=true) wysyłamy pole domyślne raz, żeby produkt nie wpadł do
+     * katalogu bez nazwy, zanim złapie go synchronizacja ze sklepu.
+     */
     private Map<String, String> buildTextFields(EuroCartProduct p, TranslationStore store, String defaultLang,
-                                                Set<String> availableLanguages) {
+                                                Set<String> availableLanguages, boolean isNewProduct) {
         Map<String, String> fields = new LinkedHashMap<>();
 
         // Oryginał (polski) pod jawnym kluczem – tylko jeśli inventory ma ten język
         // dodany w Available languages (inaczej BaseLinker odrzuca cały request:
-        // "Incorrect text field identifier: name|xx").
+        // "Incorrect text field identifier: name|xx"). Potrzebny dla Allegro PL,
+        // Shoptet (słowacki sklep) nie ma skąd go dostarczyć.
         if (availableLanguages.contains(sourceLang)) {
             putIfPresent(fields, "name|" + sourceLang, p.getName());
             putIfPresent(fields, "description|" + sourceLang, p.getDescription());
         }
 
-        // Tłumaczenia – tylko języki dostępne w inventory ORAZ mające wpis w cache
+        // Tłumaczenia – tylko języki dostępne w inventory ORAZ mające wpis w cache.
+        // Słowacki (jeśli akurat jest w languageProviders) pomijamy przy aktualizacji
+        // z tego samego powodu co pole domyślne niżej – zarządza nim Shoptet.
         for (String lang : languageProviders.keySet()) {
+            if (lang.equals(defaultLang) && !isNewProduct) continue;
             if (!availableLanguages.contains(lang)) continue;
             Map<String, String> cache = store.lang(lang);
             putIfPresent(fields, "name|" + lang, cache.get(p.getName()));
             putIfPresent(fields, "description|" + lang, cache.get(p.getDescription()));
         }
 
-        // Pole domyślne katalogu: tekst w default_language, fallback na polski
+        if (!isNewProduct) {
+            // Produkt już istnieje – pole domyślne (słowackie) zostaje w gestii
+            // synchronizacji sklep→BaseLinker, nie nadpisujemy go tutaj.
+            return fields;
+        }
+
+        // Nowy produkt: pole domyślne katalogu (tekst w default_language, fallback
+        // na polski) – jednorazowo, żeby karta nie była pusta zanim złapie ją sync.
         String defaultName = sourceLang.equals(defaultLang)
                 ? p.getName()
                 : store.lang(defaultLang).getOrDefault(p.getName(), p.getName());
