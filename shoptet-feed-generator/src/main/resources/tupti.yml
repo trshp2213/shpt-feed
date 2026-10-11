@@ -1,0 +1,52 @@
+spring:
+  main:
+    web-application-type: none   # CLI app – no embedded server
+
+tupti:
+  # GitHub Secrets: TUPTI_PRODUCTS_URL, TUPTI_BASIC_URL (URL-e zawierają token dostępu -
+  # nie wpisywać ich do repo, repo jest publiczne)
+  products-url: ${TUPTI_PRODUCTS_URL}
+  basic-url: ${TUPTI_BASIC_URL}
+  # Produkty pomijane w całości (pakiety hotelowe: bez symbolu, EAN i kategorii)
+  excluded-ids: "442,443,444"
+  # Cena w feedzie Shoptet = price_net z feedu dostawcy (to już EUR) x mnożnik,
+  # zaokrąglona W GÓRĘ do 5 centów. PRICE i PRICE_VAT mają tę samą wartość.
+  price-multiplier: 2
+  currency: EUR
+  category-root: Tuptiwood
+  # Producent z feedu; gdy pusty - ta wartość
+  default-manufacturer: Tuptiwood
+  # Wymiary opakowania z feedu dostawcy (LOGISTIC: WIDTH/DEPTH/HEIGHT). false = nie wysyłaj.
+  send-dimensions: true
+  # Bezpiecznik: feed z mniejszą liczbą pozycji nie nadpisuje istniejącego pliku
+  min-products: 100
+  # Feed nie jest zapisywany, gdy więcej niż tyle % tekstów nie ma jeszcze tłumaczenia SK
+  max-untranslated-percent: 5
+
+azure:
+  # GitHub Secrets: AZURE_TRANSLATOR_KEY + AZURE_TRANSLATOR_REGION (te same co w Carinio)
+  api-key: ${AZURE_TRANSLATOR_KEY:}
+  region: ${AZURE_TRANSLATOR_REGION:}
+  endpoint: https://api.cognitive.microsofttranslator.com
+  max-retries: 5
+
+translation:
+  source-lang: pl
+  # Na razie tylko SK (feed Shoptet). Pozostałe języki - osobny etap przez API BaseLinkera.
+  languages: "{sk: 'azure'}"
+  # Limit znaków/miesiąc dla TEGO pipeline'u (cache ma własne liczniki). Pierwszy run to ok. 490 tys.
+  # unikalnych znaków; Azure F0 = 2 mln/mies. wspólnie z Carinio, stąd zapas.
+  monthly-limits: "{azure: 1000000}"
+
+output:
+  feed-path: output/tupti-feed.xml
+  cache-path: output/tupti-translation-cache.json
+
+shoptet:
+  # Stawka VAT wysyłana w tagu VAT (writer Carinio czyta tę samą właściwość)
+  vat-rate: 23
+
+logging:
+  level:
+    com.example.tuptifeed: INFO
+    com.example.shoptetfeed: INFO
