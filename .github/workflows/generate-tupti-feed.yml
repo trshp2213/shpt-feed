@@ -1,0 +1,65 @@
+name: Generate Tuptiwood Feed
+
+on:
+  schedule:
+    # co 4 godziny, przesunięte względem Carinio (06:00 i 18:00 UTC)
+    - cron: '25 1,5,9,13,17,21 * * *'
+  workflow_dispatch:
+
+# nigdy dwa runy naraz (pierwszy run tłumaczy ok. 20 minut)
+concurrency:
+  group: tupti-feed
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: shoptet-feed-generator
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build project
+        run: mvn -q package -DskipTests
+
+      - name: Generate Tupti feed
+        env:
+          TUPTI_PRODUCTS_URL: ${{ secrets.TUPTI_PRODUCTS_URL }}
+          TUPTI_BASIC_URL: ${{ secrets.TUPTI_BASIC_URL }}
+          AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
+          AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
+        run: mvn -q spring-boot:run -Dstart-class=com.example.tuptifeed.TuptiFeedApplication
+
+      - name: Commit updated files
+        working-directory: .
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add shoptet-feed-generator/output/tupti-feed.xml shoptet-feed-generator/output/tupti-translation-cache.json
+          if git diff --staged --quiet; then
+            echo "No changes – skipping commit"
+          else
+            git commit -m "chore: update tupti-feed.xml [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
