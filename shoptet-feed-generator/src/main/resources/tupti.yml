@@ -13,7 +13,7 @@ tupti:
   # zaokrąglona W GÓRĘ do 5 centów. PRICE i PRICE_VAT mają tę samą wartość.
   price-multiplier: 2
   currency: EUR
-  category-root: Tuptiwood
+  category-root: TUPTIWOOD
   # Producent z feedu; gdy pusty - ta wartość
   default-manufacturer: Tuptiwood
   # Wymiary opakowania z feedu dostawcy (LOGISTIC: WIDTH/DEPTH/HEIGHT). false = nie wysyłaj.
