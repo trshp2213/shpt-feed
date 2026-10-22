@@ -7381,11 +7381,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -8129,6 +8129,43 @@
       <WIDTH>77</WIDTH>
       <DEPTH>45</DEPTH>
       <HEIGHT>99</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>Prepravná taška pre zvieratá Carinio Cruise Taupe</NAME>
+    <SHORT_DESCRIPTION>Prepravná taška pre psov – opierka na lakť do auta CARINIO CRUISE Moderná prepravná taška, ktorá spája funkciu pohodlného ležadla s praktickou opierkou na lakť do auta.</SHORT_DESCRIPTION>
+    <DESCRIPTION>Prepravná taška pre psov – opierka na lakť do auta CARINIO CRUISE Moderná prepravná taška, ktorá spája funkciu pohodlného ležadla s praktickou opierkou na lakť do auta. Navrhnutá s ohľadom na pohodlie vášho miláčika a estetiku interiéru auta – ideálna pre ľudí, ktorí neakceptujú kompromisy medzi štýlom a funkčnosťou. Pohodlie a bezpečnosť na cestách. Mäkký, príjemný na dotyk vnútorný priestor obklopuje vášho miláčika a vytvára útulný priestor počas jazdy. Stabilná konštrukcia s penovou výplňou udržuje tvar tašky, ktorý sa ideálne hodí do priestoru medzi prednými sedadlami, na tzv. „opierku na ruky“. Vstavaná krátka vodítka s karabínou umožňuje bezpečne pripútať vášho miláčika a zabrániť tak jeho vyskočeniu počas cesty. Funkcia 2 v 1 – prepravka a taška. Vďaka primeranej výške a konštrukcii sa taška ideálne prispôsobí priestoru medzi sedadlami v aute. Váš pes zostáva blízko vás, čo zvyšuje jeho pocit bezpečia a znižuje stres počas jazdy. Prémiové materiály a elegantný dizajn. Taška je vyrobená z vysoko kvalitnej čalúnnickej tkaniny a vyznačuje sa odolnosťou a schopnosťou vydržať každodenné používanie. Dekatná farebná schéma a minimalistický dizajn zaisťujú, že sa výborne hodí do moderného interiéru auta. Premyslené detaily: • otvor, ktorý umožňuje vášmu miláčikovi voľne pozorovať okolie • mäkký, vyberateľný vankúš pre dodatočný komfort • pevné, pohodlné uchá na nosenie • tkanina, ktorá sa ľahko udržiava v čistote • stabilné bočné steny zaisťujúce bezpečnosť a ergonómiu CARINIO CRUISE je viac než len taška – je to mobilná zóna pohodlia pre vášho miláčika a štýlový doplnok do vášho auta. Rozmery: 45 x 26 x 31 cm (skutočné rozmery sa môžu mierne líšiť od uvedených)</DESCRIPTION>
+    <MANUFACTURER>Carinio</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>DOMÁCE ZVIERATÁ &gt; Prepravné tašky pre zvieratá</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://zoob2b.pl/img/8868/torba-transportowa-dla-zwierzat-carinio-cruise-tau.jpg</IMAGE>
+    </IMAGES>
+    <CODE>TRA/CAR/CRUISE/TA</CODE>
+    <EXTERNAL_CODE>1463</EXTERNAL_CODE>
+    <EAN>5900805927050</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>56.90</PRICE>
+    <PRICE_VAT>56.90</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>1.000</WEIGHT>
+      <WIDTH>45</WIDTH>
+      <DEPTH>26</DEPTH>
+      <HEIGHT>31</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
 </SHOP>
