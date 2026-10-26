@@ -29,11 +29,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>0.770</WEIGHT>
@@ -5290,11 +5290,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>2.600</WEIGHT>
@@ -7334,11 +7334,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
+          <VALUE>19</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
+    <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>0.960</WEIGHT>
@@ -7381,11 +7381,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
+          <VALUE>19</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
+    <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
