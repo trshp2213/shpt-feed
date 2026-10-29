@@ -2238,49 +2238,6 @@
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
-    <NAME>Prepravka pre zvieratá 3 v 1 Carinio Voyager Sand</NAME>
-    <SHORT_DESCRIPTION>VOYAGER LEŽANKA / PREPRAVNÁ TAŠKA DO AUTA / SEDADLO PRE PSA Cestovanie so psom autom nemusí byť stresujúce ani pre zvieratko, ani pre majiteľa.</SHORT_DESCRIPTION>
-    <DESCRIPTION>VOYAGER LEŽANKA / PREPRAVNÁ TAŠKA DO AUTA / SEDADLO PRE PSA Cestovanie so psom autom nemusí byť stresujúce ani pre zvieratko, ani pre majiteľa. Naše autoľôžko pre psov bolo navrhnuté s ohľadom na maximálny komfort, bezpečnosť a funkčnosť počas každodenných ciest aj dlhších výletov. Tento produkt spája autosedačku a mäkké prenosné lôžko, vďaka čomu predstavuje univerzálne a praktické riešenie pre každého majiteľa psa. Vďaka mäkkému a útulnému dizajnu sa pes cíti ako vo svojom domácom lôžku, čo výrazne znižuje stres spojený s jazdou autom. Vysoké, stabilné steny poskytujú pocit bezpečia a chránia psa pred náhlymi pohybmi vozidla. Vďaka možnosti pevného upevnenia k sedadlu vozidla zostáva ležadlo na svojom mieste aj pri brzdení či zatáčaní. Produkt sa výborne osvedčí nielen v aute, ale aj mimo neho – po vyňatí z auta môže slúžiť ako prepravná taška alebo prenosný pelech. Je to ideálne riešenie na výlety, návštevy u veterinára, dovolenky či každodenné jazdy po meste. Okrem toho ležadlo účinne chráni čalúnenie pred chlpmi, nečistotami a škrabancami. Najdôležitejšie vlastnosti produktu: Praktické bočné vrecká – Ležadlo je vybavené dodatočnými vreckami, ktoré umožňujú uloženie najpotrebnejších doplnkov – vodítka, pamlskov, hygienických vrecúšok, hračiek alebo psích dokladov. Všetko máte počas cesty vždy po ruke. Nastaviteľný popruh na upevnenie k sedadlu – Vďaka nastaviteľnému upevňovaciemu popruhu je možné ležadlo ľahko a stabilne pripevniť k operadlu autosedačky. Zabraňuje to posúvaniu ležadla a zvyšuje bezpečnosť psa počas jazdy. Vnútorný bezpečnostný pás na pripútanie psích postrojov – Vstavaný vnútorný pás umožňuje pripútať psa pomocou postroja, čo obmedzuje jeho pohyby a chráni ho pred náhlym vyskočením alebo zranením pri prudkom brzdení. Mäkká a pohodlná konštrukcia – Hrubá, mäkká výplň a materiály príjemné na dotyk zaisťujú psovi vysoký komfort cestovania. Ležadlo sa ideálne hodí aj ako miesto na odpočinok mimo auta. Stabilné, vysoké bočnice – Vysoké bočnice zvyšujú pocit bezpečia psa a chránia interiér auta pred znečistením. Dve farby na výber – Produkt je k dispozícii v dvoch univerzálnych farebných variantoch – tmavomodrej a béžovej, vďaka čomu sa ľahko prispôsobí interiéru auta. Univerzálne použitie – Vhodné pre psov malých a stredných plemien. Hodí sa do väčšiny modelov áut – tak na predné sedadlo, ako aj na zadnú lavicu. Prečo si vybrať práve náš produkt? Naše autoľôžko je kombináciou bezpečnosti, pohodlia a funkčnosti v jednom produkte. Zabezpečuje psovi pohodlné cestovné podmienky a majiteľovi pokoj a poriadok v aute. Vďaka solídnemu spracovaniu, praktickým riešeniam a estetickému vzhľadu je to produkt, ktorý sa osvedčí v každodennom živote aj počas dlhých ciest. Je to investícia do bezpečnosti vášho miláčika a pohodlia každej spoločnej cesty. Rozmery: 60 x 45 x 56 cm</DESCRIPTION>
-    <MANUFACTURER>Carinio</MANUFACTURER>
-    <VISIBILITY>visible</VISIBILITY>
-    <ITEM_TYPE>product</ITEM_TYPE>
-    <CATEGORIES>
-      <CATEGORY>DOMÁCE ZVIERATÁ &gt; Ležiská pre zvieratá</CATEGORY>
-    </CATEGORIES>
-    <IMAGES>
-      <IMAGE>https://zoob2b.pl/img/5463/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5464/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5465/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5466/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5467/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5468/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-      <IMAGE>https://zoob2b.pl/img/5469/voyager-3w1-sand-legowisko-transporter-fotelik.jpg</IMAGE>
-    </IMAGES>
-    <CODE>TRA/CAR/VOYAGER/SA</CODE>
-    <EXTERNAL_CODE>1237</EXTERNAL_CODE>
-    <EAN>5900805923649</EAN>
-    <CURRENCY>EUR</CURRENCY>
-    <PRICE>71.40</PRICE>
-    <PRICE_VAT>71.40</PRICE_VAT>
-    <VAT>23</VAT>
-    <STOCK>
-      <WAREHOUSES>
-        <WAREHOUSE>
-          <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
-        </WAREHOUSE>
-      </WAREHOUSES>
-    </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
-    <VISIBLE>1</VISIBLE>
-    <LOGISTIC>
-      <WEIGHT>2.800</WEIGHT>
-      <WIDTH>60</WIDTH>
-      <DEPTH>45</DEPTH>
-      <HEIGHT>56</HEIGHT>
-    </LOGISTIC>
-  </SHOPITEM>
-  <SHOPITEM>
     <NAME>Prepravka pre zvieratá 3 v 1 Carinio Voyager Marine</NAME>
     <SHORT_DESCRIPTION>VOYAGER LEŽANKA / PREPRAVNÁ TAŠKA DO AUTA / SEDADLO PRE PSA Cestovanie so psom autom nemusí byť stresujúce ani pre zvieratko, ani pre majiteľa.</SHORT_DESCRIPTION>
     <DESCRIPTION>VOYAGER LEŽANKA / PREPRAVNÁ TAŠKA DO AUTA / SEDADLO PRE PSA Cestovanie so psom autom nemusí byť stresujúce ani pre zvieratko, ani pre majiteľa. Naše autoľôžko pre psov bolo navrhnuté s ohľadom na maximálny komfort, bezpečnosť a funkčnosť počas každodenných ciest aj dlhších výletov. Tento produkt spája autosedačku a mäkké prenosné lôžko, vďaka čomu predstavuje univerzálne a praktické riešenie pre každého majiteľa psa. Vďaka mäkkému a útulnému dizajnu sa pes cíti ako vo svojom domácom lôžku, čo výrazne znižuje stres spojený s jazdou autom. Vysoké, stabilné steny poskytujú pocit bezpečia a chránia psa pred náhlymi pohybmi vozidla. Vďaka možnosti pevného upevnenia k sedadlu v aute zostáva ležadlo na svojom mieste aj pri brzdení alebo zatáčaní. Produkt sa výborne osvedčí nielen v aute, ale aj mimo neho – po vyňatí z auta môže slúžiť ako prepravná taška alebo prenosný pelech. Je to ideálne riešenie na výlety, návštevy u veterinára, dovolenky či každodenné jazdy po meste. Okrem toho ležadlo účinne chráni čalúnenie pred chlpmi, nečistotami a škrabancami. Najdôležitejšie vlastnosti produktu: Praktické bočné vrecká – Ležadlo je vybavené dodatočnými vreckami, ktoré umožňujú uloženie najpotrebnejších doplnkov – vodítka, pamlskov, hygienických vrecúšok, hračiek alebo psích dokladov. Všetko máte počas cesty vždy po ruke. Nastaviteľný popruh na upevnenie k sedadlu – Vďaka nastaviteľnému upevňovaciemu popruhu je možné ležadlo ľahko a stabilne pripevniť k operadlu autosedačky. Zabraňuje to posúvaniu ležadla a zvyšuje bezpečnosť psa počas jazdy. Vnútorný bezpečnostný pás na pripútanie psích postrojov – Vstavaný vnútorný pás umožňuje pripútať psa pomocou postroja, čo obmedzuje jeho pohyby a chráni ho pred náhlym vyskočením alebo zranením pri prudkom brzdení. Mäkká a pohodlná konštrukcia – Hrubá, mäkká výplň a materiály príjemné na dotyk zabezpečujú psovi vysoký komfort cestovania. Ležadlo sa ideálne hodí aj ako miesto na odpočinok mimo auta. Stabilné, vysoké bočnice – Vysoké bočnice zvyšujú pocit bezpečia psa a chránia interiér auta pred znečistením. Dve farby na výber – Produkt je k dispozícii v dvoch univerzálnych farebných variantoch – tmavomodrej a béžovej, vďaka čomu sa ľahko prispôsobí interiéru auta. Univerzálne použitie – Vhodné pre psov malých a stredných plemien. Hodí sa do väčšiny modelov áut – tak na predné sedadlo, ako aj na zadnú lavicu. Prečo si vybrať práve náš produkt? Naše autoľôžko je kombináciou bezpečnosti, pohodlia a funkčnosti v jednom produkte. Zabezpečuje psovi pohodlné podmienky na cestovanie a majiteľovi pokoj a poriadok v aute. Vďaka solídnemu spracovaniu, praktickým riešeniam a estetickému vzhľadu je to produkt, ktorý sa osvedčí v každodennom živote aj počas dlhých ciest. Je to investícia do bezpečnosti vášho miláčika a pohodlia každej spoločnej cesty. Rozmery: 61 x 45 x 56 cm</DESCRIPTION>
