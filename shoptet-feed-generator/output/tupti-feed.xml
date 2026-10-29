@@ -1317,11 +1317,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>2.000</WEIGHT>
@@ -9808,48 +9808,7 @@
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
-    <NAME>BUBBLE MIDI nástenná knižnica - biela a prírodná – Biela</NAME>
-    <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 364-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
-    <MANUFACTURER>tupti.wood</MANUFACTURER>
-    <VISIBILITY>visible</VISIBILITY>
-    <ITEM_TYPE>product</ITEM_TYPE>
-    <CATEGORIES>
-      <CATEGORY>TUPTIWOOD &gt; Detská izba &gt; Montessori knižnice pre deti</CATEGORY>
-    </CATEGORIES>
-    <IMAGES>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5274.png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5279.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5277.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5278.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5446.jpg</IMAGE>
-    </IMAGES>
-    <CODE>BUB_MID_REG_SCN_BIALY</CODE>
-    <EXTERNAL_CODE>412-175</EXTERNAL_CODE>
-    <EAN>5906583674353</EAN>
-    <CURRENCY>EUR</CURRENCY>
-    <PRICE>75.00</PRICE>
-    <PRICE_VAT>75.00</PRICE_VAT>
-    <VAT>23</VAT>
-    <STOCK>
-      <WAREHOUSES>
-        <WAREHOUSE>
-          <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
-        </WAREHOUSE>
-      </WAREHOUSES>
-    </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
-    <VISIBLE>1</VISIBLE>
-    <LOGISTIC>
-      <WEIGHT>1.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>103</DEPTH>
-      <HEIGHT>10</HEIGHT>
-    </LOGISTIC>
-  </SHOPITEM>
-  <SHOPITEM>
-    <NAME>BUBBLE MIDI nástenná knižnica - biela a prírodná – Prírodné</NAME>
+    <NAME>BUBBLE MIDI nástenná knižnica - prírodná</NAME>
     <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
     <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 364-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
@@ -9866,11 +9825,11 @@
       <IMAGE>https://b2b-tuptiwood.com/files/_product/412/5446.jpg</IMAGE>
     </IMAGES>
     <CODE>BUB_MID_REG_SCN_SKLEJ</CODE>
-    <EXTERNAL_CODE>412-176</EXTERNAL_CODE>
+    <EXTERNAL_CODE>412</EXTERNAL_CODE>
     <EAN>5906583674360</EAN>
     <CURRENCY>EUR</CURRENCY>
-    <PRICE>91.65</PRICE>
-    <PRICE_VAT>91.65</PRICE_VAT>
+    <PRICE>112.70</PRICE>
+    <PRICE_VAT>112.70</PRICE_VAT>
     <VAT>23</VAT>
     <STOCK>
       <WAREHOUSES>
@@ -10341,48 +10300,7 @@
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
-    <NAME>BUBBLE MINI Nástenná knižnica – biela a prírodná – Biela</NAME>
-    <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 3 64-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
-    <MANUFACTURER>tupti.wood</MANUFACTURER>
-    <VISIBILITY>visible</VISIBILITY>
-    <ITEM_TYPE>product</ITEM_TYPE>
-    <CATEGORIES>
-      <CATEGORY>TUPTIWOOD &gt; Detská izba &gt; Montessori knižnice pre deti</CATEGORY>
-    </CATEGORIES>
-    <IMAGES>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5370.png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5267.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5266.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5268.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5265.jpg</IMAGE>
-    </IMAGES>
-    <CODE>BUB_MIN_REG_SCN_BIALY</CODE>
-    <EXTERNAL_CODE>419-177</EXTERNAL_CODE>
-    <EAN>5906583674339</EAN>
-    <CURRENCY>EUR</CURRENCY>
-    <PRICE>63.90</PRICE>
-    <PRICE_VAT>63.90</PRICE_VAT>
-    <VAT>23</VAT>
-    <STOCK>
-      <WAREHOUSES>
-        <WAREHOUSE>
-          <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
-        </WAREHOUSE>
-      </WAREHOUSES>
-    </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
-    <VISIBLE>1</VISIBLE>
-    <LOGISTIC>
-      <WEIGHT>1.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>103</DEPTH>
-      <HEIGHT>10</HEIGHT>
-    </LOGISTIC>
-  </SHOPITEM>
-  <SHOPITEM>
-    <NAME>BUBBLE MINI Nástenná knižnica – biela a prírodná – Prírodné</NAME>
+    <NAME>BUBBLE MINI Nástenná knižnica - prírodná</NAME>
     <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
     <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 3 64-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
@@ -10399,7 +10317,7 @@
       <IMAGE>https://b2b-tuptiwood.com/files/_product/419/5265.jpg</IMAGE>
     </IMAGES>
     <CODE>BUB_MIN_REG_SCN_SKLEJ</CODE>
-    <EXTERNAL_CODE>419-178</EXTERNAL_CODE>
+    <EXTERNAL_CODE>419</EXTERNAL_CODE>
     <EAN>5906583674346</EAN>
     <CURRENCY>EUR</CURRENCY>
     <PRICE>97.20</PRICE>
@@ -11056,9 +10974,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>11.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11125,9 +11040,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>13.500</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11180,9 +11092,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11235,9 +11144,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11289,9 +11195,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11343,9 +11246,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>14.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11407,9 +11307,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>11.000</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -11471,9 +11368,6 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>13.500</WEIGHT>
-      <WIDTH>66</WIDTH>
-      <DEPTH>102</DEPTH>
-      <HEIGHT>9</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
   <SHOPITEM>
@@ -12118,6 +12012,88 @@
       <WIDTH>68</WIDTH>
       <DEPTH>127</DEPTH>
       <HEIGHT>12</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>BUBBLE MINI Nástenná knižnica - biela</NAME>
+    <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 3 64-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
+    <MANUFACTURER>tupti.wood</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>TUPTIWOOD &gt; Detská izba &gt; Montessori knižnice pre deti</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/457/5370.png</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/457/5267.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/457/5266.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/457/5268.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/457/5265.jpg</IMAGE>
+    </IMAGES>
+    <CODE>BUB_MIN_REG_SCN_BIALY</CODE>
+    <EXTERNAL_CODE>457</EXTERNAL_CODE>
+    <EAN>5906583674339</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>63.90</PRICE>
+    <PRICE_VAT>63.90</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>1.000</WEIGHT>
+      <WIDTH>66</WIDTH>
+      <DEPTH>103</DEPTH>
+      <HEIGHT>10</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>BUBBLE MIDI Nástenná knižnica - biela</NAME>
+    <SHORT_DESCRIPTION>Prečo sa oplatí vybrať závesnú knižnicu do detskej izby? Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia...</SHORT_DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;Prečo sa oplatí vybrať závesnú knižnicu do detskej izby?&lt;/p&gt;&lt;p data-start="196" data-end="476"&gt;Každý rodič vie, aké dôležité je mať knihy vždy po ruke – podporujú spoločné čítanie, rozvíjajú predstavivosť a učia samostatnosť. Preto sme vytvorili kolekciu závesných knižníc – knižnice, ktoré spájajú funkčnosť, estetiku a bezpečnosť v jednom.&lt;/p&gt;&lt;p data-start="478" data-end="886"&gt;Naše nástenné knižnice sú ideálnym riešením pre izbu batoľaťa. Zaberajú málo miesta a zároveň pomáhajú udržiavať poriadok a vytvárajú teplú, útulnú atmosféru. Vďaka tomu, že knihy, obľúbené hračky alebo malé predmety sú vo výške očí dieťaťa, si ich batoľa môže vziať späť na miesto. Je to jednoduchý spôsob, ako sa naučiť samostatnosti a rozvíjať dobré návyky.&lt;/p&gt;&lt;h3 data-start="888" data-end="917"&gt;Kolekcia plná možností&lt;/h3&gt;&lt;p data-start="918" data-end="1040"&gt;Nová kolekcia knižných regálov tupti.wood bola navrhnutá s ohľadom na odlišné potreby a priestory. K dispozícii sú nasledujúce:&lt;/p&gt;&lt;ul data-start="1041" data-end="1426"&gt;&lt;li data-start="1041" data-end="1114"&gt;&lt;p data-start="1043" data-end="1114"&gt;&lt;strong data-start="1043" data-end="1058"&gt;dve farby:&lt;/strong&gt; nadčasová biela a teplý odtieň prírodného dreva,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1115" data-end="1176"&gt;&lt;p data-start="1117" data-end="1176"&gt;&lt;strong data-start="1117" data-end="1137"&gt;Dve povrchové úpravy:&lt;/strong&gt; klasické a s jemným volánom,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1177" data-end="1426"&gt;&lt;p data-start="1179" data-end="1199"&gt;&lt;strong data-start="1179" data-end="1197"&gt;Tri veľkosti:&lt;/strong&gt;&lt;/p&gt;&lt;ul data-start="1202" data-end="1426"&gt;&lt;li data-start="1202" data-end="1285"&gt;&lt;p data-start="1204" data-end="1285"&gt;&lt;strong data-start="1204" data-end="1212"&gt;Mini&lt;/strong&gt; – s praktickými háčikmi, ideálne napríklad na batoh, vak alebo sveter,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1288" data-end="1351"&gt;&lt;p data-start="1290" data-end="1351"&gt;&lt;strong data-start="1290" data-end="1298"&gt;MIDI&lt;/strong&gt; – presne na vykladanie kníh a drobností,&lt;/p&gt;&lt;/li&gt;&lt;li data-start="1354" data-end="1426"&gt;&lt;p data-start="1356" data-end="1426"&gt;&lt;strong data-start="1356" data-end="1364"&gt;Maxi&lt;/strong&gt; – pre skutočných milovníkov literatúry a dekorácií.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start="1428" data-end="1536"&gt;Vďaka tomu si každý rodič môže vybrať správnu veľkosť a štýl podľa veku dieťaťa a charakteru interiéru.&lt;/p&gt;&lt;h3 data-start="1538" data-end="1581"&gt;Prirodzený vzhľad a bezpečná práca&lt;/h3&gt;&lt;p data-start="1582" data-end="1894"&gt;Každá knižnica je vyrobená z kvalitného dreva, starostlivo obrúsená a pripravená tak, aby bola bezpečná aj pre najmladších používateľov. Prírodné materiály a jednoduchý tvar robia knižnicu dokonale splývajúcou s ostatným nábytkom a vytvárajú teplý, harmonický priestor v detskej izbe.&lt;/p&gt;&lt;h3 data-start="1896" data-end="1930"&gt;Malý nábytok, veľké možnosti&lt;/h3&gt;&lt;p data-start="1931" data-end="2234"&gt;Zavesená knižnica nie je len miesto na knihy. Je to spôsob, ako vytvoriť malý čitateľský kútik, ozdobiť stenu a zorganizovať priestor. Je to detail, na ktorom záleží – pretože vďaka nemu sa knihy stávajú súčasťou každodenného života dieťaťa a učenie a hra sa prirodzene prelínajú.&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Certifikáty a bezpečnostné upozornenia Produkt by sa mal používať podľa veku a úrovne zručností dieťaťa.&lt;br&gt;Používajte produkt len pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Obal nie je určený na hru. Pred odovzdaním produktu dieťaťu odstráňte všetky obaly.&lt;br&gt;Produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Produkt musí byť umiestnený na stabilnom, bezpečnom povrchu – riziko prevrátenia.&lt;br&gt;ProducentGrawersi.pl Sp. z o.o.&lt;br&gt;Kościańska 364-000 Katarzynin, Polskabiuro@grawersi.pl&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Odporúčaný vek:&lt;/strong&gt; 3+&lt;/p&gt;</DESCRIPTION>
+    <MANUFACTURER>tupti.wood</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>TUPTIWOOD &gt; Detská izba &gt; Montessori knižnice pre deti</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/458/5274.png</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/458/5279.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/458/5277.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/458/5278.jpg</IMAGE>
+      <IMAGE>https://b2b-tuptiwood.com/files/_product/458/5446.jpg</IMAGE>
+    </IMAGES>
+    <CODE>BUB_MID_REG_SCN_BIALY</CODE>
+    <EXTERNAL_CODE>458</EXTERNAL_CODE>
+    <EAN>5906583674353</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>92.20</PRICE>
+    <PRICE_VAT>92.20</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>1.000</WEIGHT>
+      <WIDTH>66</WIDTH>
+      <DEPTH>103</DEPTH>
+      <HEIGHT>10</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
 </SHOP>
