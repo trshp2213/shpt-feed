@@ -610,12 +610,24 @@
       "BUBBLE MIDI Regał ścienny na książki - naturalny" : "BUBBLE MIDI nástenná knižnica - prírodná",
       "BUBBLE MINI Regał ścienny na książki - naturalny" : "BUBBLE MINI Nástenná knižnica - prírodná",
       "BUBBLE MINI Regał ścienny na książki - biały" : "BUBBLE MINI Nástenná knižnica - biela",
-      "BUBBLE MIDI Regał ścienny na książki - biały" : "BUBBLE MIDI Nástenná knižnica - biela"
+      "BUBBLE MIDI Regał ścienny na książki - biały" : "BUBBLE MIDI Nástenná knižnica - biela",
+      "BUBBLE MAXI Regał ścienny na książki -naturalny" : "BUBBLE MAXI Knižnica na stene – prírodná",
+      "MINI Regał ścienny na książki - naturalny" : "MINI nástenná knižnica - prírodná",
+      "MIDI Regał ścienny na książki - naturalny" : "MIDI nástenná knižnica - prírodná",
+      "MAXI Regał ścienny na książki - naturalny" : "MAXI nástenná knižnica - prírodná",
+      "Drabinka gimnastyczna z uchwytem do podciągania i blatem" : "Rebrík v posilňovni s rukoväťou a vrchom na zhyby",
+      "BUBBLE MAXI Regał ścienny na książki - biały" : "BUBBLE MAXI Nástenná knižnica - biela",
+      "MINI Regał ścienny na książki - biały" : "MINI nástenná knižnica - biela",
+      "MIDI Regał ścienny na książki - biały" : "MIDI nástenná knižnica - biela",
+      "MAXI Regał ścienny na książki - biały" : "MAXI Nástenná knižnica - biela"
     }
   },
   "usage" : {
     "2026-10" : {
       "azure" : 488202
+    },
+    "2026-11" : {
+      "azure" : 381
     }
   },
   "managedSkus" : [ ]
