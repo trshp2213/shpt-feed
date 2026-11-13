@@ -9407,11 +9407,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -9448,11 +9448,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -9489,11 +9489,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>4.600</WEIGHT>
@@ -9530,11 +9530,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>6.200</WEIGHT>
@@ -9571,11 +9571,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>4.600</WEIGHT>
@@ -9612,11 +9612,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.100</WEIGHT>
@@ -9694,11 +9694,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -10280,7 +10280,7 @@
   <SHOPITEM>
     <NAME>4in1 Kuchynský pomocník STEP Kuchynský pomocník + Funkcia stola a stoličky - biela</NAME>
     <SHORT_DESCRIPTION>Jeden kus nábytku – toľko možností! Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň. Nie je to len klasický pomocník...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;Jeden kus nábytku – toľko možností!&amp;nbsp;Zoznámte sa s naším 4v1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Rozšíriteľné s modulom podávania&lt;/strong&gt;&lt;br /&gt;Ďalší modul s vysúvacím podnosom bude dobre fungovať pri rozširovaní stravy a denných jedál.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ďalší modul slúži aj ako druhá stolička&lt;/strong&gt;&lt;br /&gt;Keď je umiestnený pri stole, môže slúžiť ako ďalšie sedadlo.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ideálne pre súrodencov&lt;/strong&gt;&lt;br /&gt;Dve deti môžu pohodlne sedieť oproti sebe a spolu sa hrať, jesť alebo tvoriť.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Špecifikácie&lt;/strong&gt;&lt;br /&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;Jeden kus nábytku – toľko možností!&amp;nbsp;Zoznámte sa s naším 4v1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Špecifikácie&lt;/strong&gt;&lt;br /&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
     <VISIBILITY>visible</VISIBILITY>
     <ITEM_TYPE>product</ITEM_TYPE>
@@ -10290,7 +10290,6 @@
     <IMAGES>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm1%20(1).png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm2.png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm3.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm4.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm5.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm6.jpg</IMAGE>
@@ -10298,9 +10297,7 @@
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm8.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm9.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm10.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm11.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm12.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm13.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm14.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm15.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm16.jpg</IMAGE>
@@ -10311,16 +10308,7 @@
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm21.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm22.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm23.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm24.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm25.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm26.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm27.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm28.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm29.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm30.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm31.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm32.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/434/kitchenhelper_pomocnikkuchenny_lernturm33.jpg</IMAGE>
     </IMAGES>
     <CODE>KH STEP</CODE>
     <EXTERNAL_CODE>434</EXTERNAL_CODE>
@@ -10333,11 +10321,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>11.000</WEIGHT>
@@ -10399,11 +10387,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>13.500</WEIGHT>
@@ -10412,7 +10400,7 @@
   <SHOPITEM>
     <NAME>4v1 Kuchynský pomocník STEP Kuchynský pomocník + Funkcia stola a stoličky - drevené</NAME>
     <SHORT_DESCRIPTION>Jeden kus nábytku – toľko možností! Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň. Nie je to len klasický pomocník...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;Jeden kus nábytku – toľko možností!&amp;nbsp;Zoznámte sa s naším 4v1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Rozšíriteľné s modulom podávania&lt;/strong&gt;&lt;br /&gt;Ďalší modul s vysúvacím podnosom bude dobre fungovať pri rozširovaní stravy a denných jedál.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ďalší modul slúži aj ako druhá stolička&lt;/strong&gt;&lt;br /&gt;Keď je umiestnený pri stole, môže slúžiť ako ďalšie sedadlo.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ideálne pre súrodencov&lt;/strong&gt;&lt;br /&gt;Dve deti môžu pohodlne sedieť oproti sebe a spolu sa hrať, jesť alebo tvoriť.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Špecifikácie&lt;/strong&gt;&lt;br /&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;Jeden kus nábytku – toľko možností!&amp;nbsp;Zoznámte sa s naším 4v1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Špecifikácie&lt;/strong&gt;&lt;br /&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
     <VISIBILITY>visible</VISIBILITY>
     <ITEM_TYPE>product</ITEM_TYPE>
@@ -10421,7 +10409,6 @@
     </CATEGORIES>
     <IMAGES>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm1.png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm2.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm3.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm4.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm5.jpg</IMAGE>
@@ -10431,14 +10418,7 @@
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm9.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm10.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm11.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm12.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm13.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm14.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm15.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm16.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm17.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm18.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/436/kitchenhelper_pomocnikkuchenny_lernturm19.jpg</IMAGE>
     </IMAGES>
     <CODE>KH STEP_SKLEJ</CODE>
     <EXTERNAL_CODE>436</EXTERNAL_CODE>
@@ -10451,11 +10431,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
@@ -10503,11 +10483,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
@@ -10516,7 +10496,7 @@
   <SHOPITEM>
     <NAME>4v1 Kuchynský pomocník NEST Kuchynský pomocník + Funkcia stola a stoličky - biela</NAME>
     <SHORT_DESCRIPTION>Jeden kus nábytku – toľko možností! Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň. Nie je to len klasický pomocník...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;&lt;strong&gt;Jeden kus nábytku – toľko možností!&lt;/strong&gt;&amp;nbsp;Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Rozšíriteľné s modulom podávania&lt;/strong&gt;&lt;br /&gt;Ďalší modul s vysúvacím podnosom bude dobre fungovať pri rozširovaní stravy a denných jedál.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ďalší modul slúži aj ako druhá stolička&lt;/strong&gt;&lt;br /&gt;Keď je umiestnený pri stole, môže slúžiť ako ďalšie sedadlo.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ideálne pre súrodencov&lt;/strong&gt;&lt;br /&gt;Dve deti môžu pohodlne sedieť oproti sebe a spolu sa hrať, jesť alebo tvoriť.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://tuptiwood.pl/pl/p/4w1-Kitchen-Helper-STEP-Pomocnik-Kuchenny-funkcja-stolika-i-krzeselka-opcja-modulu-do-karmienia-bialy-i-drewniany/698#"&gt;Špecifikácie&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;&lt;strong&gt;Jeden kus nábytku – toľko možností!&lt;/strong&gt;&amp;nbsp;Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://tuptiwood.pl/pl/p/4w1-Kitchen-Helper-STEP-Pomocnik-Kuchenny-funkcja-stolika-i-krzeselka-opcja-modulu-do-karmienia-bialy-i-drewniany/698#"&gt;Špecifikácie&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
     <VISIBILITY>visible</VISIBILITY>
     <ITEM_TYPE>product</ITEM_TYPE>
@@ -10526,21 +10506,10 @@
     <IMAGES>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm1.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm2%20(1).png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm3%20(1).png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm4%20(1).png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm5%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm6%20(1).jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm7%20(1).jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm8%20(1).jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm9%20(1).jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm10%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm11%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm12%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm13%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm14%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm15%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm16%20(1).jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm17%20(1).jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/438/kitchenhelper_pomocnikkuchenny_lernturm18%20(1).jpg</IMAGE>
     </IMAGES>
     <CODE>KH NEST</CODE>
@@ -10554,11 +10523,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.000</WEIGHT>
@@ -10605,11 +10574,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>14.000</WEIGHT>
@@ -10618,7 +10587,7 @@
   <SHOPITEM>
     <NAME>4in1 Kuchynský pomocník NEST Kuchynský pomocník + Funkcia stola a stoličky - drevené</NAME>
     <SHORT_DESCRIPTION>Jeden kus nábytku – toľko možností! Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň. Nie je to len klasický pomocník...</SHORT_DESCRIPTION>
-    <DESCRIPTION>&lt;p&gt;&lt;strong&gt;Jeden kus nábytku – toľko možností!&lt;/strong&gt;&amp;nbsp;Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Rozšíriteľné s modulom podávania&lt;/strong&gt;&lt;br /&gt;Ďalší modul s vysúvacím podnosom bude dobre fungovať pri rozširovaní stravy a denných jedál.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ďalší modul slúži aj ako druhá stolička&lt;/strong&gt;&lt;br /&gt;Keď je umiestnený pri stole, môže slúžiť ako ďalšie sedadlo.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Ideálne pre súrodencov&lt;/strong&gt;&lt;br /&gt;Dve deti môžu pohodlne sedieť oproti sebe a spolu sa hrať, jesť alebo tvoriť.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://tuptiwood.pl/pl/p/4w1-Kitchen-Helper-STEP-Pomocnik-Kuchenny-funkcja-stolika-i-krzeselka-opcja-modulu-do-karmienia-bialy-i-drewniany/698#"&gt;Špecifikácie&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;&lt;strong&gt;Jeden kus nábytku – toľko možností!&lt;/strong&gt;&amp;nbsp;Zoznámte sa s naším 4-v-1 kuchynským pomocníkom, ktorý rastie spolu s vaším dieťaťom a mení sa presne podľa vašich potrieb každý deň.&lt;br /&gt;Nie je to len klasický kuchynský pomocník. Je to multifunkčný kus nábytku, ktorý podporuje samostatnosť dieťaťa, spoločné varenie, hranie a každodenné rodinné rituály.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Pomocník v kuchyni&lt;/strong&gt;&lt;br /&gt;Vaše dieťa sa môže bezpečne zúčastňovať každodenných aktivít v kuchyni — miešať, piecť, pozorovať a učiť sa tým, že spolu trávia čas.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;V duchu Montessori&lt;/strong&gt;&lt;br /&gt;Podporuje učenie sa byť samostatný, rozvíja sebavedomie a umožňuje dieťaťu aktívne sa zapájať do každodenného života.&lt;br /&gt;&lt;strong&gt;&amp;nbsp;• Stôl a stolička za pár sekúnd&lt;/strong&gt;&lt;br /&gt;Jednoducho otočte a rozložte konštrukciu, aby ste z pomocníka urobili praktický stôl so stoličkou – ideálny na kreslenie, hranie alebo občerstvenie.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Viacero prvkov v jednom kuse&lt;/strong&gt;&amp;nbsp;nábytku šetrí miesto a zabraňuje nadbytku detského nábytku doma.&lt;br /&gt;&amp;nbsp;• &lt;strong&gt;Minimalistický dizajn a funkčnosť&lt;/strong&gt;&lt;br /&gt;V interiéri vyzerá krásne a zároveň rodičom veľmi uľahčuje každodenný život.&lt;br /&gt;Je to kus nábytku, ktorý je navrhnutý tak, aby vaše bábätko bolo blízko vás — počas varenia, hrania sa a všetkých tých malých každodenných chvíľ&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Prečo si rodičia vyberajú tupti.wood?&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Prepracovaný dizajn&lt;/strong&gt;&amp;nbsp;– každý detail je premyslený. Všetky okraje sú starostlivo zaoblené, aby boli úplne bezpečné pre malé ruky.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Poľská produkcia srdcom&lt;/strong&gt;&amp;nbsp;– všetko vytvárame vo vlastnom štúdiu, od návrhu až po finálne úpravy. Špecialistom zverujeme iba certifikačné testy.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;• Kvalitné materiály&lt;/strong&gt;&amp;nbsp;– zameriavame sa na bezpečné, certifikované materiály s antibakteriálnymi a hygienickými vlastnosťami.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;a href="https://tuptiwood.pl/pl/p/4w1-Kitchen-Helper-STEP-Pomocnik-Kuchenny-funkcja-stolika-i-krzeselka-opcja-modulu-do-karmienia-bialy-i-drewniany/698#"&gt;Špecifikácie&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Výška 90 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 45 cm&lt;br /&gt;Výška schodu 20 cm&lt;br /&gt;Výška nástupišťa od zeme 46,5 cm&lt;br /&gt;Vzdialenosť od platformy k šachte 40 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Rozložený (verzia so stolom so sedadlom)&lt;/strong&gt;&lt;br /&gt;Výška 45 cm&lt;br /&gt;Šírka 39,5 cm&lt;br /&gt;Hĺbka 90 cm&lt;br /&gt;Schod/sedadlo 20 cm&lt;br /&gt;Plocha stola/doska stola 45 cm&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Farba/povrchová úprava:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;• biela laminovaná doska + drevené hrany&lt;/p&gt;&lt;p&gt;• Prírodná/preglejka – Produkty vyrábame z prírodnej preglejky, takže každý z nich je jedinečný. Odtieň dreva a usporiadanie vlákien sa môžu mierne líšiť, čo je spôsobené prirodzenými vlastnosťami materiálu. Váš produkt nemusí vyzerať presne ako na obrázku, ale práve táto jedinečnosť ho robí jedinečným.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;P.S.&lt;/strong&gt;&amp;nbsp;Produkt posielame na samozostavenie, jednoduché zloženie. Začnite zábavu týmto!&lt;/p&gt;&lt;h3&gt;Bezpečnostné upozornenia&lt;/h3&gt;&lt;p&gt;Bezpečnostné certifikáty a varovaniaProdukt by sa mal používať iba pod dohľadom dospelých.&lt;br&gt;Balík obsahuje malé predmety, ktoré sa dajú prehltnúť. Riziko zadusenia.&lt;br&gt;Balenie nie je určené na hranie. Pred odovzdaním produktu dieťaťu musia byť všetky časti obalu odstránené.&lt;br&gt;Tento produkt nie je vhodný na vonkajšie použitie.&lt;br&gt;Likvidujte v súlade s miestnymi predpismi o odpade.&lt;br&gt;Položte produkt na stabilný, bezpečný povrch – hrozí riziko, že spadne.&lt;br&gt;Vhodné oblečenie: Uistite sa, že vaše dieťa je správne oblečené – vyhnite sa voľnému oblečeniu alebo vyčnievajúcim doplnkom.&lt;/p&gt;</DESCRIPTION>
     <MANUFACTURER>tupti.wood</MANUFACTURER>
     <VISIBILITY>visible</VISIBILITY>
     <ITEM_TYPE>product</ITEM_TYPE>
@@ -10627,28 +10596,13 @@
     </CATEGORIES>
     <IMAGES>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm15.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm16.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm17.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm18.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm19.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm20.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm21.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm22.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm23.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm24.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm25.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm26.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm27.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm28.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm1%20(1).png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm2.png</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm3.png</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm4.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm5.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm6.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm7.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm8.jpg</IMAGE>
-      <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm9.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm10.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm11.jpg</IMAGE>
       <IMAGE>https://b2b-tuptiwood.com/files/_product/440/kitchenhelper_pomocnikkuchenny_lernturm12.jpg</IMAGE>
@@ -10666,11 +10620,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>11.000</WEIGHT>
@@ -10727,11 +10681,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>13.500</WEIGHT>
@@ -10776,11 +10730,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>28.500</WEIGHT>
@@ -10828,11 +10782,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>23.000</WEIGHT>
@@ -10880,11 +10834,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>28.500</WEIGHT>
@@ -10932,11 +10886,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>23.000</WEIGHT>
@@ -10988,11 +10942,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>42.000</WEIGHT>
@@ -11044,11 +10998,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>30.500</WEIGHT>
@@ -11100,11 +11054,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>42.000</WEIGHT>
@@ -11156,11 +11110,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>26.000</WEIGHT>
@@ -11209,11 +11163,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>32.000</WEIGHT>
@@ -11262,11 +11216,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>30.500</WEIGHT>
@@ -11315,11 +11269,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>42.000</WEIGHT>
@@ -11368,11 +11322,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>26.000</WEIGHT>
@@ -11409,11 +11363,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -11450,11 +11404,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -11491,11 +11445,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>1.000</WEIGHT>
@@ -11532,11 +11486,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>4.600</WEIGHT>
@@ -11573,11 +11527,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>6.200</WEIGHT>
@@ -11614,11 +11568,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>4.600</WEIGHT>
@@ -11655,11 +11609,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.100</WEIGHT>
