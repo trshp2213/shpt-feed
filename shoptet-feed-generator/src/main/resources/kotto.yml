@@ -1,0 +1,47 @@
+spring:
+  main:
+    web-application-type: none   # CLI app – no embedded server
+
+supplier:
+  name: kotto
+  format: gmerchant
+  # Adres publiczny; można nadpisać zmienną środowiskową KOTTO_FEED_URL
+  feed-url: ${KOTTO_FEED_URL:https://kotto.com.pl/feed-dropshipping.xml}
+  category-root: KOTTO
+  source-currency: EUR
+  # Kurs PLN/EUR jak w Carinio (stały), zaokrąglenie do 10 eurocentów, bez marży
+  eur-rate: 4.2
+  currency: EUR
+  code-prefix: ""
+  # g:brand w tym feedzie to kolor, więc producent zawsze Kotto
+  fixed-manufacturer: Kotto
+  # Bezpiecznik: feed z mniejszą liczbą pozycji nie nadpisuje pliku i nie zeruje stanów
+  min-products: 10
+  max-untranslated-percent: 5
+  # Pozycje, które zniknęły z feedu, dostają stan 0 przez 60 dni
+  tombstone-days: 60
+  seen-path: output/kotto-seen.json
+
+azure:
+  api-key: ${AZURE_TRANSLATOR_KEY:}
+  region: ${AZURE_TRANSLATOR_REGION:}
+  endpoint: https://api.cognitive.microsofttranslator.com
+  max-retries: 5
+
+translation:
+  source-lang: pl
+  languages: "{sk: 'azure'}"
+  # limit znaków/miesiąc dla TEGO pipeline'u (Azure F0 = 2 mln/mies. łącznie dla wszystkich)
+  monthly-limits: "{azure: 300000}"
+
+output:
+  feed-path: output/kotto-feed.xml
+  cache-path: output/kotto-translation-cache.json
+
+shoptet:
+  vat-rate: 23
+
+logging:
+  level:
+    com.example.supplierfeed: INFO
+    com.example.shoptetfeed: INFO
