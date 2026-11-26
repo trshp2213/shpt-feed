@@ -41,7 +41,7 @@ public class SupplierFetcherService {
     private String name;
 
     private final HttpClient httpClient = HttpClient.newBuilder()
-            .connectTimeout(Duration.ofSeconds(30))
+            .connectTimeout(Duration.ofSeconds(60))
             .followRedirects(HttpClient.Redirect.NORMAL)
             .build();
 
