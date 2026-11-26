@@ -1,0 +1,776 @@
+{
+  "S/CO/ON" : {
+    "name" : "Detský kočík Colibro Onyx Spacák",
+    "category" : "COLIBRO > Príslušenstvo",
+    "manufacturer" : "Colibro",
+    "externalCode" : "27",
+    "price" : 57.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "M/CO/PP" : {
+    "name" : "Colibro ružové chrániče na detský kočík",
+    "category" : "COLIBRO > Príslušenstvo",
+    "manufacturer" : "Colibro",
+    "externalCode" : "31",
+    "price" : 19.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "S/CO/GR" : {
+    "name" : "Detský kočík Colibro Graphite",
+    "category" : "COLIBRO > Príslušenstvo",
+    "manufacturer" : "Colibro",
+    "externalCode" : "32",
+    "price" : 57.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "D/CO" : {
+    "name" : "Predĺženie kočíka Colibro",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "35",
+    "price" : 71.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/MAX/DO" : {
+    "name" : "Autosedačka Colibro OneMax Dove",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "42",
+    "price" : 61.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/MAX/ON" : {
+    "name" : "Autosedačka Colibro OneMax Onyx",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "45",
+    "price" : 61.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/MAX/SK" : {
+    "name" : "Autosedačka Colibro OneMax Sky",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "46",
+    "price" : 61.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "N/CO/HONEY/DO" : {
+    "name" : "Colibro nosič holubice medovej",
+    "category" : "COLIBRO > Nosiče pre bábätká",
+    "manufacturer" : "Colibro",
+    "externalCode" : "159",
+    "price" : 42.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "N/CO/HONEY/ON" : {
+    "name" : "Nosič Colibro Honey Onyx",
+    "category" : "COLIBRO > Nosiče pre bábätká",
+    "manufacturer" : "Colibro",
+    "externalCode" : "160",
+    "price" : 42.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "PO/CO/STEP1/PI" : {
+    "name" : "Colibro Step1 Ružová detská platforma",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "163",
+    "price" : 7.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/BA" : {
+    "name" : "Colibro Tremix Banana detský bicykel",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "167",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/BL" : {
+    "name" : "Detský bicykel Colibro Tremix Blank",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "168",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/MA" : {
+    "name" : "Detský bicykel Colibro Tremix Magnetic",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "169",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/BA" : {
+    "name" : "Colibro TremixUP banánový detský bicykel",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "171",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/BL" : {
+    "name" : "Colibro TremixUP prázdny detský bicykel",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "172",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/MA" : {
+    "name" : "Colibro TremixUP magnetický detský bicykel",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "173",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/RO" : {
+    "name" : "Detský bicykel Colibro TremixUP Rose",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "174",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "T/CO/POP/DO" : {
+    "name" : "Detská taška Colibro Pop Dove",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "175",
+    "price" : 16.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "T/CO/POP/FL" : {
+    "name" : "Taška na kočík Colibro Pop Flamingo",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "176",
+    "price" : 16.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "T/CO/POP/MI" : {
+    "name" : "Taška Colibro Pop Mirage na kočík",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "177",
+    "price" : 16.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "T/CO/POP/ON" : {
+    "name" : "Colibro Pop Onyx taška na kočík",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "178",
+    "price" : 16.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPA/CP" : {
+    "name" : "Detská vaňa Colibro Spa Crystal Pink",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "179",
+    "price" : 33.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPA/CO" : {
+    "name" : "Colibro Spa Chladná detská vaňa",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "180",
+    "price" : 33.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPA/DO" : {
+    "name" : "Colibro Spa Dove detská vaňa",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "181",
+    "price" : 33.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "W/CO/FOCUS/IN" : {
+    "name" : "Detský kočík Colibro Focus Ink",
+    "category" : "COLIBRO > Detské kočíky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "185",
+    "price" : 300.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "M/CO/AG" : {
+    "name" : "Chrániče na detský kočík Colibro Agava",
+    "category" : "COLIBRO > Príslušenstvo",
+    "manufacturer" : "Colibro",
+    "externalCode" : "662",
+    "price" : 19.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "S/CO/AG" : {
+    "name" : "Detský kočík Colibro Agava spacák",
+    "category" : "COLIBRO > Príslušenstvo",
+    "manufacturer" : "Colibro",
+    "externalCode" : "665",
+    "price" : 57.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/CIAO/SG" : {
+    "name" : "Detský bicykel Colibro Ciao Street Grey",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "703",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/CIAO/RG" : {
+    "name" : "Detský bicykel Colibro Ciao Rose Gold",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "704",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/CIAO/MW" : {
+    "name" : "Detský bicykel Colibro Ciao Milky White",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "705",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/NUKI/CL" : {
+    "name" : "Detský nočník Bunny Nuki Cloud",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "748",
+    "price" : 19.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/NUKI/OC" : {
+    "name" : "Detský nočník Bunny Nuki Ocean",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "749",
+    "price" : 19.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/LINDO/DO" : {
+    "name" : "Colibro Lindo Dove detská postieľka",
+    "category" : "COLIBRO > Detské postieľky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "758",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/LINDO/ON" : {
+    "name" : "Colibro Lindo Onyx detská postieľka",
+    "category" : "COLIBRO > Detské postieľky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "759",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/LINDO/NA" : {
+    "name" : "Colibro Lindo prírodná detská postieľka",
+    "category" : "COLIBRO > Detské postieľky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "760",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/PINO/ON" : {
+    "name" : "Colibro Pino Onyx detská postieľka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "761",
+    "price" : 52.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/PINO/DO" : {
+    "name" : "Colibro Pino Dove detská postieľka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "762",
+    "price" : 52.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/PINO/NA" : {
+    "name" : "Colibro Pino prírodná detská postieľka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "763",
+    "price" : 52.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/CIAO/FG" : {
+    "name" : "Detský bicykel Colibro Ciao Forest Green",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "805",
+    "price" : 47.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/NOTO/ON" : {
+    "name" : "Vysoká stolička Colibro Noto Onyx",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "817",
+    "price" : 71.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/NOTO/DO" : {
+    "name" : "Vysoká stolička Colibro Noto Dove",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "818",
+    "price" : 71.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/NOTO/AG" : {
+    "name" : "Kŕmiace kreslo Colibro Noto Agava",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "819",
+    "price" : 71.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/NOTO/AL" : {
+    "name" : "Mandľová stolička Colibro Noto",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "820",
+    "price" : 71.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "ST/CO/SPA" : {
+    "name" : "SPA kúpeľňový stojan (6 kusov)",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "832",
+    "price" : 142.8,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPA/CO" : {
+    "name" : "Colibro Spa Chladná sada detskej vane so stojanom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "833",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPA/DO" : {
+    "name" : "Sada detskej vane Colibro Spa Dove so stojanom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "834",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPA/CP" : {
+    "name" : "Sada detskej vane Colibro Spa Crystal Pink s podstavcom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "835",
+    "price" : 59.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/NAP/TA" : {
+    "name" : "Colibro Nap Taupe postieľka pri posteli",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "843",
+    "price" : 83.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/BYSIDE/CL" : {
+    "name" : "Colibro Byside Cloud postieľka pri posteli",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "935",
+    "price" : 85.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/BYSIDE/DO" : {
+    "name" : "Colibro Byside Dove prídavná postieľka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "936",
+    "price" : 85.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "L/CO/BYSIDE/TA" : {
+    "name" : "Colibro Byside Taupe Extra Postieľka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "937",
+    "price" : 85.7,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/SCANDI/AL" : {
+    "name" : "Colibro Scandi mandľová stolička",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "942",
+    "price" : 78.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/SCANDI/AG" : {
+    "name" : "Vysoká stolička Colibro Scandi Agava",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "943",
+    "price" : 78.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/SCANDI/DO" : {
+    "name" : "Stolička Colibro Scandi Dove",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "944",
+    "price" : 78.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "KR/CO/SCANDI/ON" : {
+    "name" : "Vysoká stolička Colibro Scandi Onyx",
+    "category" : "COLIBRO > Vysoké stoličky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "945",
+    "price" : 78.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/ON" : {
+    "name" : "Autosedačka Colibro Petit Onyx",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "989",
+    "price" : 87.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/DO" : {
+    "name" : "Autosedačka Colibro Petit Dove",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "990",
+    "price" : 87.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/PI" : {
+    "name" : "Autosedačka Colibro Petit Pine",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "991",
+    "price" : 87.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/CA" : {
+    "name" : "Autosedačka Colibro Petit Camel",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "992",
+    "price" : 87.9,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/PRO/ON" : {
+    "name" : "Autosedačka Colibro Petit Pro Onyx",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "993",
+    "price" : 166.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/PRO/DO" : {
+    "name" : "Autosedačka Colibro Petit Pro Dove",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "994",
+    "price" : 166.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/PRO/PI" : {
+    "name" : "Autosedačka Colibro Petit Pro Pine",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "995",
+    "price" : 166.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "F/CO/PETIT/PRO/CA" : {
+    "name" : "Autosedačka Colibro Petit Pro Camel",
+    "category" : "COLIBRO > Autosedačky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "996",
+    "price" : 166.4,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/FLIP" : {
+    "name" : "Detská vaňa Colibro Flip s prebaľovacím pultom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1019",
+    "price" : 142.6,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/ELISSE/SI" : {
+    "name" : "Detský nočník Colibro Elisse Silver",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1020",
+    "price" : 26.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/SOLO/CL" : {
+    "name" : "Detský nočník Colibro Solo Cloud",
+    "category" : "COLIBRO > Detské nočníky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1022",
+    "price" : 9.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/SOLO/RO" : {
+    "name" : "Detský nočník Colibro Solo Rose",
+    "category" : "COLIBRO > Detské nočníky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1023",
+    "price" : 9.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/SOLO/LI" : {
+    "name" : "Detský nočník Colibro Solo Lila",
+    "category" : "COLIBRO > Detské nočníky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1024",
+    "price" : 9.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "NO/CO/SOLO/CO" : {
+    "name" : "Colibro Solo Cool detský nočník",
+    "category" : "COLIBRO > Detské nočníky",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1025",
+    "price" : 9.5,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPACE/NO" : {
+    "name" : "Detská vaňa Colibro Space",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1026",
+    "price" : 45.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPACE/SP" : {
+    "name" : "Colibro Space Sweet Pink detská vaňa",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1027",
+    "price" : 50.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPACE/CB" : {
+    "name" : "Colibro Space Cloudy Blue detská vaňa",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1028",
+    "price" : 50.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "TE/CO/ASTRO" : {
+    "name" : "Teplomer do kúpeľa Colibro Astro",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1029",
+    "price" : 4.8,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "HU/CO/RUN/BA" : {
+    "name" : "Colibro Run Banana detská kolobežka",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1030",
+    "price" : 26.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "HU/CO/RUN/MA" : {
+    "name" : "Magnetická detská kolobežka Colibro Run",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1031",
+    "price" : 26.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "HU/CO/RUN/CE" : {
+    "name" : "Detská kolobežka Colibro Run Ceramic",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1032",
+    "price" : 26.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "HU/CO/RUN/JU" : {
+    "name" : "Detská kolobežka Colibro Run Jungle",
+    "category" : "COLIBRO > Výstup",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1033",
+    "price" : 26.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "LE/CO/RELAX" : {
+    "name" : "Lehátko Colibro Relax",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1173",
+    "price" : 19.0,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "WA/CO/SPACE/2W1" : {
+    "name" : "Colibro Space 2-v-1 detská vaňa",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1174",
+    "price" : 57.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPACE/2W1" : {
+    "name" : "Colibro Space 2-v-1 skladacia detská vaňa so stojanom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1440",
+    "price" : 88.1,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPACE/CB" : {
+    "name" : "Colibro Space Cloudy Blue skladacia detská vaňa so stojanom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1441",
+    "price" : 83.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "Z/CO/SPACE/SP" : {
+    "name" : "Colibro Space Sweet Pink skladacia detská vaňa so stojanom",
+    "category" : "COLIBRO > Detské vane",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1442",
+    "price" : 83.3,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/IV" : {
+    "name" : "Colibro TremixUP Ivory detský bicykel",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1455",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/CO" : {
+    "name" : "Colibro TremixUP Coal detský bicykel",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1456",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/AS" : {
+    "name" : "Detský bicykel Colibro TremixUP Ash",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1457",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  },
+  "R/CO/TREMIX/UP/MO" : {
+    "name" : "Detský bicykel Colibro TremixUP Mousse",
+    "category" : "COLIBRO > Detské bicykle",
+    "manufacturer" : "Colibro",
+    "externalCode" : "1458",
+    "price" : 95.2,
+    "currency" : "EUR",
+    "lastSeen" : "2026-11-26"
+  }
+}
