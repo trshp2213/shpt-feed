@@ -42,6 +42,13 @@ jobs:
       - name: Build project
         run: mvn -q package -DskipTests
 
+      - name: Diagnostyka połączenia z kunert.world
+        continue-on-error: true
+        working-directory: .
+        run: |
+          curl -sS -o /dev/null -m 60 -4 -w "IPv4: http=%{http_code} ip=%{remote_ip} connect=%{time_connect}s total=%{time_total}s\n" "https://kunert.world/xml-porownywarki/ceneo/?hash=zdefiniuj-haslo" || echo "IPv4: curl exit $?"
+          curl -sS -o /dev/null -m 60 -6 -w "IPv6: http=%{http_code} ip=%{remote_ip} connect=%{time_connect}s total=%{time_total}s\n" "https://kunert.world/xml-porownywarki/ceneo/?hash=zdefiniuj-haslo" || echo "IPv6: curl exit $?"
+
       - name: Generate Kunert feed
         env:
           SUPPLIER: kunert
