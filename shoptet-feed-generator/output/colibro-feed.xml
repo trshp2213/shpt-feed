@@ -3311,11 +3311,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
+          <VALUE>19</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
+    <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>10.700</WEIGHT>
@@ -3628,11 +3628,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
+          <VALUE>19</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
+    <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>3.700</WEIGHT>
@@ -4417,6 +4417,61 @@
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>8.350</WEIGHT>
+      <WIDTH>48</WIDTH>
+      <DEPTH>84</DEPTH>
+      <HEIGHT>86</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>Skladacia detská vaňa Colibro Space so stojanom</NAME>
+    <SHORT_DESCRIPTION>Detská vaňa COLIBRO SPACE so stojanom – skladacia vaňa s teplomerom Skladacia vaňa COLIBRO SPACE so stojanom je ideálnym riešením pre tých z vás, ktorí hľadajú prenosnú skladaciu vaňu, ktorú je možné tiež namontovať na pohodlný a stabilný stojan.</SHORT_DESCRIPTION>
+    <DESCRIPTION>&lt;p&gt;Detská vaňa COLIBRO SPACE so stojanom – skladacia vaňa s teplomerom Skladacia vaňa COLIBRO SPACE so stojanom je ideálnym riešením pre tých z vás, ktorí hľadajú prenosnú skladaciu vaňu, ktorú je možné tiež namontovať na pohodlný a stabilný stojan. COLIBRO SPACE je veľká skladacia vaňa pre bábätko s integrovaným teplomerom, držiakom na sprchu a protišmykovou podložkou. Je navrhnutá pre deti od narodenia až do 3 rokov. Jej veľkosť a kapacita zabezpečujú takú dlhú životnosť. Celková dĺžka je až 84 cm a kapacita až 40 litrov. Vaňa SPACE je jednou z najväčších skladacích vaní dostupných na trhu. Má špeciálne zosilnenú konštrukciu, takže sa neohýba ani pri prenášaní s vodou. Vďaka skladacím nohám a flexibilnej silikónovej časti sa vaňa SPACE dá zložiť naplocho, čo určite uľahčuje jej skladovanie v kúpeľni. Keď je vaňa rozložená, dá sa položiť na podlahu alebo napríklad do vane či sprchovej vaničky. Vstavaný teplomer ukáže, či je voda vo vani správnej teploty alebo príliš studená/príliš horúca. Zabudnite na meranie teploty lakťom. Dotknite sa teplomera a ukáže aktuálnu teplotu 10 sekúnd. Ak jej okraj žiari zeleno, voda je vhodná na kúpanie; ak je modrá, voda je príliš studená a červený okraj znamená, že voda je pre bábätko príliš teplá. Držiak sprchy umožňuje pripevniť sprchový hrot na koniec vane, čím uvoľníte obe ruky. Kúpanie rušného malého bude oveľa jednoduchšie. Vaňa COLIBRO SPACE má zabudovanú gumovú protišmykovú podložku, ktorá zabraňuje šmyku dieťaťa počas kúpania. Gumové protišmykové podložky na nohách zabezpečujú stabilitu vane, či už ju položíte na podlahu, do vane alebo do sprchovej vaničky. Vaňa má odtok so silikónovou zátkou, čo uľahčuje jej vyprázdnenie. Jednoducho ju vložte do vane alebo sprchovej vaničky a otvorte odtokový zátku. Ďalšou výhodou je možnosť inštalácie kúpeľňovej postieľky vďaka špeciálne tvarovaným okrajom navrhnutým na tento účel. ŠPECIFIKÁCIE: - skladacia detská vaňa za stojanom, - stabilný skladací stojan dokonale prispôsobený vani, - protišmykové nožičky a skladacia silikónová časť, - veľká vaňa pre deti od narodenia do približne 3 rokov, - odtok so silikónovým odtokovým zátkou, - držiak sprchovej špičky, - zabudovaná protišmyková podložka, - skladacie nohy s protišmykovými podložkami, - vaňa prispôsobená na montáž detskej postieľky, TECHNICKÉ ÚDAJE: Vaňa: Dĺžka:  84 cm Šírka: 48 cm Výška od zeme po horný okraj umývadla: 24 cm Hmotnosť: 2,8 kg Kapacita: 40 litrov Stojan: Výška: 86 cm Dĺžka: 76 cm Šírka: 56,5 cm Hmotnosť: 2,75 kg Maximálne zaťaženie stojana: 30 kg&lt;/p&gt;</DESCRIPTION>
+    <MANUFACTURER>Colibro</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>COLIBRO &gt; Detské vane</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_13.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_1.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_2.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_3.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_4.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_5.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_6.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_7.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_8.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_9.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_10.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_11.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_12.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_14.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_15.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_16.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_17.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_18.jpg</IMAGE>
+      <IMAGE>https://euro-cart.eu/wp-content/uploads/2026/07/colibro_SPACE_STAND_19.jpg</IMAGE>
+    </IMAGES>
+    <CODE>Z/CO/SPACE/NO</CODE>
+    <EXTERNAL_CODE>1443</EXTERNAL_CODE>
+    <EAN>5907573551227</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>78.60</PRICE>
+    <PRICE_VAT>78.60</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>8.100</WEIGHT>
       <WIDTH>48</WIDTH>
       <DEPTH>84</DEPTH>
       <HEIGHT>86</HEIGHT>
