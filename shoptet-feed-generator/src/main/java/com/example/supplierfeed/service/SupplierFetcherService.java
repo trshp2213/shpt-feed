@@ -40,10 +40,13 @@ public class SupplierFetcherService {
     @Value("${supplier.name:supplier}")
     private String name;
 
-    private final HttpClient httpClient = HttpClient.newBuilder()
-            .connectTimeout(Duration.ofSeconds(60))
-            .followRedirects(HttpClient.Redirect.NORMAL)
-            .build();
+    @Value("${supplier.connect-timeout-seconds:30}")
+    private int connectTimeoutSeconds;
+
+    @Value("${supplier.fetch-attempts:3}")
+    private int fetchAttempts;
+
+    private HttpClient httpClient;
 
     public List<SupplierProduct> fetch() throws Exception {
         // adres bywa tajny (hash) – do logów nie trafia
@@ -63,8 +66,14 @@ public class SupplierFetcherService {
     }
 
     private String download() throws Exception {
+        if (httpClient == null) {
+            httpClient = HttpClient.newBuilder()
+                    .connectTimeout(Duration.ofSeconds(connectTimeoutSeconds))
+                    .followRedirects(HttpClient.Redirect.NORMAL)
+                    .build();
+        }
         Exception last = null;
-        for (int attempt = 1; attempt <= 3; attempt++) {
+        for (int attempt = 1; attempt <= fetchAttempts; attempt++) {
             try {
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(feedUrl))
@@ -77,8 +86,8 @@ public class SupplierFetcherService {
             } catch (Exception e) {
                 last = e;
             }
-            log.warn("[{}] Pobranie nieudane (próba {}/3): {}", name, attempt, last.getMessage());
-            Thread.sleep(5000L * attempt);
+            log.warn("[{}] Pobranie nieudane (próba {}/{}): {}", name, attempt, fetchAttempts, last.getMessage());
+            if (attempt < fetchAttempts) Thread.sleep(5000L * attempt);
         }
         throw new RuntimeException("Nie udało się pobrać feedu " + name + ": " + (last == null ? "?" : last.getMessage()));
     }
