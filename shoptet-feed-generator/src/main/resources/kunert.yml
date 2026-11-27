@@ -16,6 +16,10 @@ supplier:
   default-manufacturer: KUNERT
   # Bezpiecznik: feed z mniejszą liczbą pozycji nie nadpisuje pliku i nie zeruje stanów
   min-products: 100
+  # kunert.world przepuszcza tylko część adresów GitHub Actions: krótkie próby, nieudane pobranie nie wywala runa
+  connect-timeout-seconds: 15
+  fetch-attempts: 2
+  skip-on-fetch-failure: true
   max-untranslated-percent: 5
   # Pozycje, które zniknęły z feedu, dostają stan 0 przez 60 dni
   tombstone-days: 60
