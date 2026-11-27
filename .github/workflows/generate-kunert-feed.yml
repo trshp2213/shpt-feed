@@ -2,7 +2,7 @@ name: Generate Kunert Feed
 
 on:
   schedule:
-    - cron: '35 2,8,14,20 * * *'
+    - cron: '35 */2 * * *'
   workflow_dispatch:
 
 # nigdy dwa runy naraz (pierwszy run tłumaczy kilkanaście-kilkadziesiąt minut)
