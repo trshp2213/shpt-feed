@@ -41,11 +41,22 @@ public class SupplierFeedRunner implements CommandLineRunner {
     @Value("${supplier.max-untranslated-percent:5}")
     private double maxUntranslatedPercent;
 
+    /** Gdy dostawca blokuje część adresów GitHuba: nieudane pobranie = run kończy się bez zmian (zielony), kolejny nadrobi. */
+    @Value("${supplier.skip-on-fetch-failure:false}")
+    private boolean skipOnFetchFailure;
+
     @Override
     public void run(String... args) throws Exception {
         log.info("=== [{}] feed generator starting ===", name);
 
-        List<SupplierProduct> products = fetcher.fetch();
+        List<SupplierProduct> products;
+        try {
+            products = fetcher.fetch();
+        } catch (Exception e) {
+            if (!skipOnFetchFailure) throw e;
+            log.error("[{}] Pobranie feedu nieudane ({}) - zostaje poprzedni plik, kolejny run spróbuje ponownie", name, e.getMessage());
+            return;
+        }
         if (products.size() < minProducts) {
             log.error("[{}] Pobrano tylko {} pozycji (min {}) - przerywam bez zmian w feedzie", name, products.size(), minProducts);
             return;
