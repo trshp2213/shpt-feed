@@ -2820,11 +2820,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>0.220</WEIGHT>
@@ -2951,11 +2951,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>19</VALUE>
+          <VALUE>0</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Skladom</AVAILABILITY>
+    <AVAILABILITY>Nedostupné</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>0.200</WEIGHT>
@@ -3673,11 +3673,11 @@
       <WAREHOUSES>
         <WAREHOUSE>
           <NAME>Sklad</NAME>
-          <VALUE>0</VALUE>
+          <VALUE>19</VALUE>
         </WAREHOUSE>
       </WAREHOUSES>
     </STOCK>
-    <AVAILABILITY>Nedostupné</AVAILABILITY>
+    <AVAILABILITY>Skladom</AVAILABILITY>
     <VISIBLE>1</VISIBLE>
     <LOGISTIC>
       <WEIGHT>0.900</WEIGHT>
@@ -7953,6 +7953,100 @@
       <WIDTH>45</WIDTH>
       <DEPTH>26</DEPTH>
       <HEIGHT>31</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>Vozík pre zvieratá Carinio Finu Olive</NAME>
+    <SHORT_DESCRIPTION>Kočík pre psov FINU značky CARINIO – nízka cena, veľa výhod Kočík pre psov FINU značky CARINIO sa ponúka za veľmi atraktívnu cenu a disponuje všetkými základnými funkciami, ktoré používatelia kočíkov pre psov očakávajú.</SHORT_DESCRIPTION>
+    <DESCRIPTION>Kočík pre psov FINU značky CARINIO – nízka cena, veľa výhod Kočík pre psov FINU značky CARINIO sa ponúka za veľmi atraktívnu cenu a disponuje všetkými základnými funkciami, ktoré používatelia kočíkov pre psov očakávajú. Je ľahký a pohodlný na ovládanie. Dá sa ľahko zložiť na malé rozmery, takže nezaberie veľa miesta v kufri auta. Bez problémov ho vynesiete po schodoch alebo do autobusu. To všetko získate za cenu, ktorá určite nezruinuje váš rozpočet. Kočík pre psov FINU ponúka ideálny pomer ceny a kvality. FINU disponuje všetkými nevyhnutnými funkciami psieho kočíka pri zachovaní atraktívnej ceny. Neočakávajte od neho úžasné technologické novinky, ktorými disponujú drahšie kočíky značky CARINIO. Máte však všetko, čo je potrebné na prechádzku so psíkom. Oplatí sa kúpiť kočík pre psa? Odpoveď znie: Samozrejme, že áno. Kočík pre psov znamená bezpečnosť a pohodlie tak pre vášho chlpatého miláčika, ako aj pre jeho majiteľa. Kočík pre psov znamená bezpečnosť vášho miláčika. Vďaka kočíku pre psov CARINIO FINU budú prechádzky za akýchkoľvek podmienok nielen pohodlnejšie, ale aj bezpečnejšie pre vášho miláčika. Kočík pre psov sa ideálne osvedčí na preplnených miestach, ako sú hlavné nákupné ulice, preplnené historické centrá miest alebo nákupné centrá, kde sú najmä malé psy vystavené riziku náhodného pošliapania. Kočík sa tiež ukáže ako vynikajúci úkryt pred inými, často väčšími a agresívnymi psami. Vezmite svojho psíka v kočíku do obchodu. Mnohé obchody neumožňujú vstup so psami. Tento zákaz sa však nevzťahuje na psov prepravovaných v kočíkoch. Kočík pre psov CARINO FINU má pohodlné poistky koša, ktoré neotvorí ani ten najšikovnejší psík. Ak kočík správne zaistíte, môžete s ním bez problémov vojsť do väčšiny obchodov, kaviarní a iných miest, kde by vstup so psom mohol byť obmedzený. Kočík pre psov je pohodlný tak pre vás, ako aj pre vášho miláčika. Ako často sa vám stáva, že nosíte psíka na rukách, aby ste mu zaistili pohodlie, napríklad v preplnenom výťahu, autobuse alebo pri každodennom nakupovaní? Keď prevážate psíka v kočíku, staráte sa nielen o jeho bezpečnosť, ale aj o svoje vlastné pohodlie. V prípade potreby máte voľné ruky, pretože kedykoľvek môžete zablokovať brzdu a kočík pustiť. Dôležité je, že psí kočík FINU môžete pohodlne tlačiť jednou rukou, vďaka čomu máte druhú ruku vždy voľnú. Kočík má praktický košík na nákupy, vďaka čomu nemusíte nosiť ďalšie tašky. Prechádzka v štýle s kočíkom pre psov značky CARINIO Značka CARINIO sa vyznačuje módnym štýlom. Doposiaľ bol kočík pre psov výlučne praktickým doplnkom. Návrhári CARINIO sa rozhodli to zmeniť. Naše kočíky pre psov sú navrhované nielen s ohľadom na funkčnosť, ale aj v súlade s najnovšími módnymi trendmi. Vysokokvalitné tkaniny v módnych farbách kombinujeme s vkusnými kovovými emblémami, páskami s logom a najkvalitnejšími lakovými alebo galvanickými povrchovými úpravami. S kočíkom CARINIO si vychádzku so psom užijete bezpečne, pohodlne a štýlovo. CARINIO FINU – stavte na komfort a bezpečnosť tak pre seba, ako aj pre svojho psa. Špecifikácia: Značka: Carinio Model: Finu Určenie: vozík pre psov s hmotnosťou do 15 kg Rozmery rozloženého vozíka: 77 cm x 45 cm x 99 cm Rozmery zloženého kočíka: 93 Rozmery koša: 57 cm x 33 cm Priemer kolies: 13,5 cm a 18,5 Hmotnosť kočíka s košom: 5,5 kg</DESCRIPTION>
+    <MANUFACTURER>Carinio</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>DOMÁCE ZVIERATÁ &gt; Vozíky pre zvieratá</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://zoob2b.pl/img/9193/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9194/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9195/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9196/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9197/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9198/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9199/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9200/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9201/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9202/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9203/wozek-dla-zwierzat-carinio-finu-olive.jpg</IMAGE>
+    </IMAGES>
+    <CODE>W/CAR/FINU/OL</CODE>
+    <EXTERNAL_CODE>1464</EXTERNAL_CODE>
+    <EAN>5900805925674</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>88.10</PRICE>
+    <PRICE_VAT>88.10</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+      <WIDTH>77</WIDTH>
+      <DEPTH>45</DEPTH>
+      <HEIGHT>99</HEIGHT>
+    </LOGISTIC>
+  </SHOPITEM>
+  <SHOPITEM>
+    <NAME>Vozík pre zvieratá Carinio Finu Sand</NAME>
+    <SHORT_DESCRIPTION>Kočík pre psov FINU značky CARINIO – nízka cena, veľa výhod Kočík pre psov FINU značky CARINIO sa ponúka za veľmi atraktívnu cenu a disponuje všetkými základnými funkciami, ktoré používatelia kočíkov pre psov očakávajú.</SHORT_DESCRIPTION>
+    <DESCRIPTION>Kočík pre psov FINU značky CARINIO – nízka cena, veľa výhod Kočík pre psov FINU značky CARINIO sa ponúka za veľmi atraktívnu cenu a disponuje všetkými základnými funkciami, ktoré používatelia kočíkov pre psov očakávajú. Je ľahký a pohodlný na ovládanie. Dá sa ľahko zložiť na malé rozmery, takže nezaberie veľa miesta v kufri auta. Bez problémov ho vynesiete po schodoch alebo do autobusu. To všetko získate za cenu, ktorá určite nezruinuje váš rozpočet. Kočík pre psov FINU ponúka ideálny pomer ceny a kvality. FINU disponuje všetkými nevyhnutnými funkciami psieho kočíka pri zachovaní atraktívnej ceny. Neočakávajte od neho úžasné technologické novinky, ktorými disponujú drahšie kočíky značky CARINIO. Máte však všetko, čo je potrebné na prechádzku so psíkom. Oplatí sa kúpiť kočík pre psa? Odpoveď znie: Samozrejme, že áno. Kočík pre psov znamená bezpečnosť a pohodlie tak pre vášho chlpatého miláčika, ako aj pre jeho majiteľa. Kočík pre psov znamená bezpečnosť vášho miláčika. Vďaka kočíku pre psov CARINIO FINU budú prechádzky za akýchkoľvek podmienok nielen pohodlnejšie, ale aj bezpečnejšie pre vášho miláčika. Kočík pre psov sa ideálne osvedčí na preplnených miestach, ako sú hlavné nákupné ulice, preplnené historické centrá miest alebo nákupné centrá, kde sú najmä malé psy vystavené riziku náhodného pošliapania. Kočík sa tiež ukáže ako vynikajúci úkryt pred inými, často väčšími a agresívnymi psami. Vezmite svojho psíka v kočíku do obchodu. Mnohé obchody neumožňujú vstup so psami. Tento zákaz sa však nevzťahuje na psov prepravovaných v kočíkoch. Kočík pre psov CARINO FINU má pohodlné poistky koša, ktoré neotvorí ani ten najšikovnejší psík. Ak kočík správne zaistíte, môžete s ním bez problémov vojsť do väčšiny obchodov, kaviarní a iných miest, kde by vstup so psom mohol byť obmedzený. Kočík pre psov je pohodlný tak pre vás, ako aj pre vášho miláčika. Ako často sa vám stáva, že nosíte psíka na rukách, aby ste mu zaistili pohodlie, napríklad v preplnenom výťahu, autobuse alebo pri každodennom nakupovaní? Keď prevážate psíka v kočíku, staráte sa nielen o jeho bezpečnosť, ale aj o svoje vlastné pohodlie. V prípade potreby máte voľné ruky, pretože kedykoľvek môžete zablokovať brzdu a kočík pustiť. Dôležité je, že psí kočík FINU môžete pohodlne tlačiť jednou rukou, vďaka čomu máte druhú ruku vždy voľnú. Kočík má praktický košík na nákupy, vďaka čomu nemusíte nosiť ďalšie tašky. Prechádzka v štýle s kočíkom pre psov značky CARINIO Značka CARINIO sa vyznačuje módnym štýlom. Doposiaľ bol kočík pre psov výlučne praktickým doplnkom. Návrhári CARINIO sa rozhodli to zmeniť. Naše kočíky pre psov sú navrhované nielen s ohľadom na funkčnosť, ale aj v súlade s najnovšími módnymi trendmi. Vysokokvalitné tkaniny v módnych farbách kombinujeme s vkusnými kovovými emblémami, páskami s logom a najkvalitnejšími lakovými alebo galvanickými povrchovými úpravami. S kočíkom CARINIO si vychádzku so psom užijete bezpečne, pohodlne a štýlovo. CARINIO FINU – stavte na komfort a bezpečnosť tak pre seba, ako aj pre svojho psa. Špecifikácia: Značka: Carinio Model: Finu Určenie: vozík pre psov s hmotnosťou do 15 kg Rozmery rozloženého vozíka: 77 cm x 45 cm x 99 cm Rozmery zloženého kočíka: 93 Rozmery koša: 57 cm x 33 cm Priemer kolies: 13,5 cm a 18,5 Hmotnosť kočíka s košom: 5,5 kg</DESCRIPTION>
+    <MANUFACTURER>Carinio</MANUFACTURER>
+    <VISIBILITY>visible</VISIBILITY>
+    <ITEM_TYPE>product</ITEM_TYPE>
+    <CATEGORIES>
+      <CATEGORY>DOMÁCE ZVIERATÁ &gt; Vozíky pre zvieratá</CATEGORY>
+    </CATEGORIES>
+    <IMAGES>
+      <IMAGE>https://zoob2b.pl/img/9214/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9215/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9216/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9217/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9218/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9219/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9220/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9221/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9222/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9223/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+      <IMAGE>https://zoob2b.pl/img/9224/wozek-dla-zwierzat-carinio-finu-sand.jpg</IMAGE>
+    </IMAGES>
+    <CODE>W/CAR/FINU/SA</CODE>
+    <EXTERNAL_CODE>1465</EXTERNAL_CODE>
+    <EAN>5900805925667</EAN>
+    <CURRENCY>EUR</CURRENCY>
+    <PRICE>88.10</PRICE>
+    <PRICE_VAT>88.10</PRICE_VAT>
+    <VAT>23</VAT>
+    <STOCK>
+      <WAREHOUSES>
+        <WAREHOUSE>
+          <NAME>Sklad</NAME>
+          <VALUE>19</VALUE>
+        </WAREHOUSE>
+      </WAREHOUSES>
+    </STOCK>
+    <AVAILABILITY>Skladom</AVAILABILITY>
+    <VISIBLE>1</VISIBLE>
+    <LOGISTIC>
+      <WEIGHT>7.000</WEIGHT>
+      <WIDTH>77</WIDTH>
+      <DEPTH>45</DEPTH>
+      <HEIGHT>99</HEIGHT>
     </LOGISTIC>
   </SHOPITEM>
 </SHOP>
